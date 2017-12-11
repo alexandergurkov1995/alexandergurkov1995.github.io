@@ -721,13 +721,24 @@ border-color: #e5e9ef transparent transparent transparent;
     padding: 20px;
 }
 
+.border-dotted-correct-work{
+    padding-left: 40px;
+    padding-right: 0;
+}
+
+.correct-work{
+    margin-left: 0;
+    padding: 0;
+}
+
 .correct-work-items{
     padding: 0;
     border: 1px solid #5ca600;
     margin-bottom: 20px;
-    margin: 2px;
+    margin-right: 2px;
     width: 24%;
 }
+
 
 .correct-work-items h3{
     font-size: 10px;
@@ -1039,7 +1050,7 @@ border-color: #e5e9ef transparent transparent transparent;
 
 .border-dotted-reviews{
     position: relative;
-    padding-bottom: 550px;
+    padding-bottom: 590px;
     padding-top: 0;
 }
 
@@ -1131,7 +1142,7 @@ border-color: #e5e9ef transparent transparent transparent;
     max-height: 30px;
     padding: 5px;
     left: 40%;
-    top: 92%;
+    top: 90%;
     margin-left: 0;
 }
 
@@ -1281,6 +1292,11 @@ footer{
 footer .submit, footer input{
     width: 210px;
     max-width: 210px;
+    margin-bottom: 5px;
+}
+
+footer .submit{
+    margin-right: 10px;
 }
 
 .bottom-footer{
@@ -1352,6 +1368,10 @@ footer .submit, footer input{
         font-size: 15px!important
     }
     
+    .border-dotted-correct-work{
+        padding-right: 15px;
+    }
+    
     .correct-work-ask{
         margin-right: 70px;
     }
@@ -1365,7 +1385,7 @@ footer .submit, footer input{
     }
     
     .border-dotted-reviews{
-        padding-bottom: 580px;
+        padding-bottom: 600px;
     }
 
     .reviews-item-third{
@@ -1374,6 +1394,10 @@ footer .submit, footer input{
 
     .reviews-item-fourth{
         top: 305px;
+    }
+    
+    .submit-reviews{
+        top: 92%
     }
     
     .reviews-item h4{
@@ -1460,12 +1484,17 @@ footer .submit, footer input{
         width: 33%;
     }
     
+    .border-dotted-correct-work{
+        padding-right: 30px;
+    }
+    
     .correct-work-items h3{
-        font-size: 7px
+        font-size: 7px;
     }
     
     .correct-work-items h3 span{
-        font-size: 14px
+        font-size: 14px;
+        left: 2px
     }
     
     .correct-work-ask{
@@ -1474,6 +1503,7 @@ footer .submit, footer input{
     
     .correct-work-ask input{
         margin-right: 0;
+        margin-bottom: 5px;
     }
     
     .why-us-company{
@@ -1537,6 +1567,18 @@ footer .submit, footer input{
     
     .six-steps-ligh-gray::before{
         border: none;
+    }
+    
+    .reviews-submit{
+        top: 
+    }
+    
+    .border-dotted-reviews{
+        padding-bottom: 530px;
+    }
+    
+    .submit-reviews{
+        top: 89%
     }
     
     .reviews-title{
@@ -1914,6 +1956,10 @@ footer .submit, footer input{
         margin-top: 40px;
     }
     
+    .how-we-work-flex{
+        justify-content: space-around
+    }
+    
     .how-we-work-flex-item{
         width: 33.333%!important;
         margin-right: 10px;
@@ -2206,11 +2252,11 @@ footer .submit, footer input{
     }
     
     .submit-reviews{
-        position: static
+        position: static;
     }
     
     .border-dotted-reviews{
-        padding: 12px;
+        padding: 20px;
     }
     
     .border-questions{
