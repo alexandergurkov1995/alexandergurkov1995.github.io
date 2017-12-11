@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/lightbox-2.6.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+      <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                hintContent: 'Москва!',
+                balloonContent: 'Столица России'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+  </head>
+  <body>
+        <header>
+            <div class="top">
+                <div class="row">
+                    <div class="container">
+                        <center>
+                  <div class="logo col-lg-12  col-md-12 col-sm-12 col-xs-12 "><a href=""><img src="img/header-logo.png" alt="logo"></a></div>
+                        <div class="menu">
+                           <div class="left cl-lg-6 pull-left col-md-6 col-sm-6 col-xs-6">
+                            <a class="active" href="">home</a>
+                            <a href="">about</a>
+                            <a href="">gallery</a>
+                            </div>
+                            <div class="right col-lg-6 pull-right col-md-6 col-sm-6 col-xs-6">
+                            <a href="">faq</a>
+                            <a href="">find us</a>
+                            <a href="">contact</a>
+                            </div>
+                        </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="about-us">
+          <div class="row">
+          <div class="container-fluid">
+           <div class="top-flex-block">
+            <div class="flex-item-left col-md-6 col-lg-6 col-sm-6 col-xs-6"><a href="#" class="about-us-a col-md-offset-2 col-lg-offset-3">about us</a></div>
+            <div class="flex-item-rigt col-md-6 col-sm-6 col-xs-6">
+                <div class="logo1 col-md-offset-5 col-sm-offset-5 col-xs-offset-5"><img src="img/logo1.png" alt="logo"></div>
+                    <p class="top-txt col-md-10 col-md-offset-1">Aliquam ac justo interdum, elementum ligula et, condimentum orci. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="bottom-txt col-md-10 col-md-offset-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc risus eros, ultricies quis erat sit amet, elementum vulputate lorem. Sed at lacinia lectus, quis blandit libero. <br>
+                    Quisque ac malesuada lectus. Proin gravida feugiat commodo. Phasellus fermentum sem ut felis vehicula aliquet. Donec rhoncus, mi et euismod dictum, purus lorem vehicula justo, a iaculis mi nulla et risus.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="row">
+                <div class="container-fluid  flex-gallery">
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100" src="img/gallery-photo1.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo1-b.jpg"  data-lightbox="image-group"><img class="zoom myButton" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100"  src="img/gallery-photo2.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo2-b.jpg"  data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100"  src="img/gallery-photo3.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo3-b.jpg" data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100" src="img/gallery-photo4.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo4-b.jpg"  data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100"  src="img/gallery-photo5.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo5-b.jpg"  data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100"  src="img/gallery-photo6.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo6-b.jpg"  data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="container-fluid flex-gallery">
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100"  src="img/gallery-photo7.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo7-b.jpg" data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100"  src="img/gallery-photo8.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo8-b.jpg"  data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100"  src="img/gallery-photo9.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo9-b.jpg"  data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100"  src="img/gallery-photo10.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo10-b.jpg"  data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100"  src="img/gallery-photo11.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo11-b.jpg"  data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt=""></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                    <div class="photo col-md-2 col-lg-2"><a href=""><img class="w100"  src="img/gallery-photo12.gif" alt="gallery"></a>
+                        <div class="hover" id="hover">
+                            <a href="img/gallery-photo12-b.jpg"  data-lightbox="image-group"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                           <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quote">
+            <div class="wrap">
+                <div class="container">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <div class="quote-content col-md-8 col-md-offset-2">
+                                <div class="quote-content-text">
+                                   <span class="quotes quotes-left">"</span>
+                                    <p>
+                                    Aliquam ac justo interdum, elementum ligula et, condimentum orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <span class="quotes quotes-right">"</span>
+                                    <span class="name">- Jhon Doe -</span>
+                                </div>
+                             </div>
+                            </div>
+                            <div class="item">
+                              <div class="quote-content col-md-8 col-md-offset-2">
+                                <div class="quote-content-text">
+                                   <span class="quotes quotes-left">"</span>
+                                    <p>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nisi cum quaerat facere cupiditate odio necessitatibus, nulla eveniet mollitia est soluta beatae quibusdam vero deserunt minima incidunt animi reiciendis id!
+                                    </p>
+                                    <span class="quotes quotes-right">"</span>
+                                    <span class="name">- Alex Show -</span>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="team">
+            <div class="row">
+               <div class="container-fluid">
+                <div class="flex-block-team ">
+                    <div class="flex-block-team-items bg-team-flex-item-block col-md-4 col-sm-4 hidden-xs">
+                        <a href="" class="team-a ">team</a>
+                    </div>
+                    <div class="flex-block-team-items col-md-4 col-sm-4 col-xs-12" >
+                         <img class="w100" src="img/corey-miller.gif" alt="corey miller">
+                    </div>
+                    <div class="flex-block-team-items col-md-4 col-sm-4 col-xs-12 corey">
+                        <div class="flex-block-items-content col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                        <h3 class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4">corey miller</h3>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit id accusamus quod, molestias impedit esse reprehenderit nobis rem possimus amet necessitatibus pariatur expedita quo, sequi aperiam, ipsum voluptate. Architecto, animi! <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ad provident earum eveniet debitis dolores, perferendis amet dolor alias similique necessitatibus voluptas delectus repellendus, quis deserunt maiores neque a. Cum.
+                        </p>
+                        <div class="social-flex">
+                            <a href=""><img src="img/facebook.png" alt="social-icons"></a>
+                            <a href=""><img src="img/twitter1.png" alt="social-icons"></a>
+                            <a href=""><img src="img/twitter.png" alt="social-icons"></a>
+                            <a href=""><img src="img/linkedin.png" alt="social-icons"></a>
+                            <a href=""><img src="img/instagram.png" alt="social-icons"></a>
+                            <a href=""><img src="img/google+.png" alt="social-icons"></a>
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+               <div class="container-fluid">
+                <div class="flex-block-team">
+                    <div class="flex-block-team-items col-md-4 col-sm-4 col-xs-12">
+                        <img class="w100" src="img/kate-von-d.gif" alt="kate von d">
+                    </div>
+                    <div class="flex-block-team-items col-md-4 col-sm-4 col-xs-12 kate">
+                       <div class="flex-block-items-content col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                        <h3 class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4">kate von d</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit id accusamus quod, molestias impedit esse reprehenderit nobis rem possimus amet necessitatibus pariatur expedita quo, sequi aperiam, ipsum voluptate. Architecto, animi! <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ad provident earum eveniet debitis dolores, perferendis amet dolor alias similique necessitatibus voluptas delectus repellendus, quis deserunt maiores neque a. Cum.</p>
+                        <div class="social-flex">
+                            <a href=""><img src="img/facebook.png" alt="social-icons"></a>
+                            <a href=""><img src="img/twitter1.png" alt="social-icons"></a>
+                            <a href=""><img src="img/twitter.png" alt="social-icons"></a>
+                            <a href=""><img src="img/linkedin.png" alt="social-icons"></a>
+                            <a href=""><img src="img/instagram.png" alt="social-icons"></a>
+                            <a href=""><img src="img/google+.png" alt="social-icons"></a>
+                        </div> 
+                      </div>
+                    </div>
+                    <div class="flex-block-team-items col-md-4 col-sm-4 col-xs-12 bg-gray">
+                      <div class="flex-block-items-content subscribe col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-4">
+                       <h4>newsletter</h4>
+                        <p class="fwbold col-md-6 col-xs-6">Join thousands of other people subscribe to our news</p>
+                        <form class="email col-md-12 col-xs-12 ">
+                            <input class="insert" type="text" value="insert email"><br>
+                            <input class="submit" type="submit" name="submit" value="submit">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quote twitter-quote">
+            <div class="wrap">
+                <div class="container">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <div class="quote-content col-md-8 col-md-offset-2">
+                                <div class="quote-content-text">
+                                   <img class="twitter-quote-img" src="img/twitter-quote.png" alt="twitter-quote">
+                                    <p>
+                                    RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups today may be big friends later. (9/10)  2 days ago
+                                    </p>
+                                </div>
+                             </div>
+                            </div>
+                            <div class="item">
+                              <div class="quote-content col-md-8 col-md-offset-2">
+                                <div class="quote-content-text">
+                                   <img class="twitter-quote-img" src="img/twitter-quote.png" alt="twitter-quote">
+                                    <p>
+                                       RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups today may be big friends later. (9/10)  2 days ago
+                                    </p>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-gallery">
+            <div class="row">
+                <div class="container-fluid flex-main-gallery">
+                    <div class="flex-main-gallery col-md-12">
+                       <div class="flex-main-item-gallery col-md-4 first-item"><a href="" class="get-started">get started</a></div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo1.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo1-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo2.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo2-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo3.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo3-b.jpg" data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="container-fluid flex-main-gallery ">
+                    <div class="flex-main-gallery col-md-12">
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo4.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo4-b.jpg" data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo5.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo5-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo6.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo6-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo7.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo7-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo8.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo8-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="container-fluid flex-main-gallery">
+                    <div class="flex-main-gallery col-md-12">
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo9.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo9-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo10.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo10-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo11.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo11-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo12.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo12-b.jpg" data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo13.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo13-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="container-fluid flex-main-gallery">
+                    <div class="flex-main-gallery col-md-12">
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo14.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo14-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo15.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo15-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo16.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo16-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo17.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo17-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                        <div class="flex-main-item-gallery"><img class="item100" src="img/item-photo18.jpg" alt="gallery-photo">
+                            <div class="hover" id="hover">
+                            <a href="img/item-photo18-b.jpg"  data-lightbox="image-group1"><img class="zoom" src="img/hover-zoom.png" alt="hover icons"></a>
+                            <a href=""><img class="link" src="img/hover-link.png" alt="hover icons"></a>
+                            <a href=""><img class="info" src="img/hover-info.png" alt="hover icons"></a>
+                            <a href=""> <img class="like" src="img/hover-like.png" alt="hover icons"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="bg-contact-us">
+            <div class="row">
+                <div class="container">
+                    <div class="contact-us">
+                        <div class="contact-us-text col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <a href="" class="contact-us-title">contact us</a>
+                            <p class="fw-normal">Aliquam ac justo interdum, elementum ligula et, condimentum orci. <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            
+                            <div class="contact-us-text-left col-lg-6 col-md-6 col-sm-6">
+                                <h4>info</h4>
+                                <p>phone: <span> + 123-456-789-456</span></p>
+                                <p>fax: <span>+ 123-456-789-456</span></p>
+                                <p>email: <span>info@inktattoo.net</span></p>
+                                <p>adress: <span>1234 Street Road, City Name</span></p>
+                            </div>
+                            
+                            <div class="contact-us-text-right col-lg-6 col-md-6 ">
+                                <h4>work hours</h4>
+                                <p>monday-friday: <span>09am - 18pm</span></p>
+                                <p>saturday: <span>09am - 17pm</span></p>
+                                <p>sunday: <span>closed</span></p>
+                            </div>
+                            <div class="social-flex col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a href=""><img src="img/facebook.png" alt="social-icons"></a>
+                            <a href=""><img src="img/twitter1.png" alt="social-icons"></a>
+                            <a href=""><img src="img/twitter.png" alt="social-icons"></a>
+                            <a href=""><img src="img/linkedin.png" alt="social-icons"></a>
+                            <a href=""><img src="img/instagram.png" alt="social-icons"></a>
+                            <a href=""><img src="img/google+.png" alt="social-icons"></a>
+                            </div> 
+                        </div>
+                        
+                        
+                        <form class="message-for-us col-lg-6 col-md-6 col-sm-6  col-xs-6" action="">
+                            <input class="full-name" type="text" value="full name"><br>
+                            <input class="enter-email" type="text" value="email"><br>
+                            <input class="message" type="text" value="message"><br>
+                            <input class="submit" type="submit" name="submit" value="message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <div class="row row-maps">
+            <div class="container-fluid maps">
+                <iframe class="col-lg-12 col-md-12 col-sm-12 col-xs-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126173.80394005356!2d-118.30454773862849!3d33.796907353313436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cae84099d759%3A0xa1003afac42a8faa!2z0JvQvtC90LMt0JHQuNGHLCDQmtCw0LvQuNGE0L7RgNC90LjRjywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1511547441226" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="container footer">
+               <div class="bottom-menu">
+                 <center>
+                  <div class="logo col-lg-12  col-md-12 col-sm-12 col-xs-12 "><a href=""><img src="img/header-logo.png" alt="logo"></a></div>
+                        <div class="menu">
+                           <div class="left cl-lg-6 pull-left col-md-6 col-sm-6 col-xs-6">
+                            <a class="active" href="">home</a>
+                            <a href="">about</a>
+                            <a href="">gallery</a>
+                            </div>
+                            <div class="right col-lg-6 pull-right col-md-6 col-sm-6 col-xs-6">
+                            <a href="">faq</a>
+                            <a href="">find us</a>
+                            <a href="">contact</a>
+                            </div>
+                        </div>
+                        </center>
+                 </div>       
+                        <div class="bottom col-lg-12 col-md-12 ">
+                        <p><span><img src="img/copyright.png" alt=""></span> 014  InkTattoo. All rights reserved - Designed by theuncreativelab.com</p>
+                        </div>
+            </div>
+        </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+  </body>
+</html>
