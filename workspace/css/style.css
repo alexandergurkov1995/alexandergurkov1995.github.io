@@ -1639,47 +1639,50 @@ footer .submit{
 
 @media (min-width: 668px) and (max-width: 768px){
     .request{
-        left: 25%
+        left: 25%;
+        top: 600px!important
     }
     
     .why-us-company{
         margin-left: 250px;
     }
     
-    .how-we-work-flex-item{
-        margin-right:70px!important;
+    .how-we-work-flex{
+        padding-left: 120px;
+        padding-right: 120px;
     }
 }
 
 @media (min-width: 618px) and (max-width: 668px){
     .request{
-        left: 20%
+        left: 20%;
+        top: 600px!important;
     }
     
-    .how-we-work-flex-item{
-        margin-right:50px!important;
+    .how-we-work-flex{
+        padding-left: 70px;
+        padding-right: 70px;
     }
     
     .why-us-company{
         margin-left: 230px;
     }
-    
-    .how-we-work-flex-item:nth-child(3), .how-we-work-flex-item:nth-child(6){
-        margin-right: 0!important;
-    }
 }
 
 @media (min-width: 568px) and (max-width: 618px){
     .request{
-        left: 20%
+        left: 20%;
+        top: 600px!important
+    }
+    
+    
+    .how-we-work-flex{
+        padding-left: 50px;
+        padding-right: 50px;
     }
     
     .how-we-work-flex-item{
-        margin-right:50px!important;
-    }
-    
-    .how-we-work-flex-item:nth-child(3), .how-we-work-flex-item:nth-child(6){
-        margin-right: 0!important;
+        width: 33.3%!im;
     }
     
     .why-us-company{
@@ -1689,15 +1692,16 @@ footer .submit{
 
 @media (min-width: 500px) and (max-width: 568px){
     .request{
-        left: 15%
+        left: 15%;
+        top: 600px!important
     }
     
-    .how-we-work-flex-item{
-        margin-right:50px!important;
+    .how-we-work-flex{
+        padding-left: 50px;
+        padding-right: 50px;
     }
     
-    .how-we-work-flex-item:nth-child(3), .how-we-work-flex-item:nth-child(6){
-        margin-right: 0!important;
+     .how-we-work-flex-item{
     }
     
     .why-us-company{
@@ -1748,10 +1752,14 @@ footer .submit{
     }
 }
 
-@media (max-width: 400px){
-   .how-we-work-flex-item:nth-child(6){
-        margin-right: 10px!important;
+@media (max-width: 410px){
+    
+    .how-we-work-flex-item{
+        width: 100px!important;
     }
+}
+
+@media (max-width: 400px){
     
     .green-stripe-ask{
         font-size: 7px!important
@@ -1759,6 +1767,15 @@ footer .submit{
     
     .advantages-bottom h3{
         font-size: 10px!important;
+    }
+    
+    .border-top-green{
+        border-top: none;
+    }
+    
+    .how-we-work-video h3{
+        font-size: 16px;
+        padding: 0 10px;
     }
 }
 
@@ -1782,9 +1799,6 @@ footer .submit{
 }
 
 @media (max-width: 380px){
-    .how-we-work-flex-item:nth-child(3), .how-we-work-flex-item:nth-child(6){
-        margin-right: 10px!important;
-    }
     
     .request{
         left: 1%
@@ -1884,7 +1898,7 @@ footer .submit{
     }
     
     .some-about-us {
-        top: 120px
+        top: 110px
     }
     
     .some-about-us p{
@@ -1893,6 +1907,7 @@ footer .submit{
         width: 100%;
         margin-bottom: 0;
         padding: 0;
+        font-size: 18px;
         position: static;
     }
     
@@ -1924,7 +1939,7 @@ footer .submit{
     
     .request{
         border: 2px dashed #e95d0f;
-        top: 650px;
+        top: 570px;
         margin-left: 23px;
         border: none;
         background: url(../img/bg-request.png) no-repeat 0 ;
@@ -1946,6 +1961,18 @@ footer .submit{
         padding-right: 0;
     }
     
+    .how-we-work-title{
+        font-size: 16px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .how-we-work-title span{
+        font-size: 12px;
+        display: block;
+        margin-top: 16px;
+    }
+    
     .how-we-work-flex{
         flex-direction: row;
         flex-wrap: wrap;
@@ -1961,13 +1988,11 @@ footer .submit{
     }
     
     .how-we-work-flex-item{
-        width: 33.333%!important;
-        margin-right: 10px;
+        width: 33.333%;
+        margin-right: 5px!important;
         margin-bottom: 10px;
-    }
-    
-    .how-we-work-flex-item:nth-child(3), .how-we-work-flex-item:nth-child(6){
-        margin-right: 0;
+        padding: 10px 5px;
+        font-size: 12px;
     }
     
     .how-we-work-video{
@@ -1990,10 +2015,24 @@ footer .submit{
     
     .ask-me .ask{
         padding-left: 0;
-        margin-left: 0;
+        margin-left: 5px;
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
+    }
+    
+    input{
+        font-size: 13px!important;
+    }
+    
+    .row-title{
+        font-size: 16px;
+        
+        line-height: 1
+    }
+    
+    .row-title span{
+        font-size: 12px
     }
     
     .row-title-bg-ligh-blue{
@@ -2022,7 +2061,7 @@ footer .submit{
     .advantages-content-title h3{
         width: 49.5%;
         padding: 10px 0;
-        font-size: 8px!important;
+        font-size: 10px!important;
     }
     
     .left-title{
@@ -2165,6 +2204,7 @@ footer .submit{
     
     .why-us-title{
         margin-top: 30px;
+        margin-bottom: 12px;
     }
     
     .why-us{
@@ -2181,7 +2221,7 @@ footer .submit{
     .why-us-items{
         border: none;
         margin-left: 1px;
-        margin-bottom: 50px;
+        margin-bottom: 45px;
     }
     
     .right-p{
@@ -2226,12 +2266,18 @@ footer .submit{
     .green-stripe-type-of-septik{
         background: #5ca600;
         padding-top: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     
     .reviews{
         display: flex;
         flex-direction: column;
         padding: 12px;
+    }
+    
+    .reviews-title{
+        margin-bottom: 0px;
     }
     
     .reviews-item{
@@ -2257,6 +2303,10 @@ footer .submit{
     
     .border-dotted-reviews{
         padding: 20px;
+    }
+    
+    .question-title{
+        margin-bottom: 36px;
     }
     
     .border-questions{
@@ -2292,5 +2342,11 @@ footer .submit{
     
     .bottom-footer{
         text-align: center;
+    }
+    
+    .bottom-footer p{
+        
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
