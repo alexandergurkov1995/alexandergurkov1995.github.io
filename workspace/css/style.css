@@ -1472,7 +1472,7 @@ footer .submit{
     }
     
     .bg-ligh-gray::before{
-        border-width: 50px 375px 0 375px;
+        border-width: 52px 375px 0 375px;
     }
     
     .type-of-systems{
@@ -1485,7 +1485,13 @@ footer .submit{
     }
     
     .border-dotted-correct-work{
-        padding-right: 30px;
+        padding-right: 20px;
+        
+    }
+    
+    .title-form{
+        padding-left: 0;
+        margin-left: -20px;
     }
     
     .correct-work-items h3{
@@ -1499,6 +1505,7 @@ footer .submit{
     
     .correct-work-ask{
         padding: 0;
+        padding-right: 40px;
     }
     
     .correct-work-ask input{
@@ -1567,10 +1574,6 @@ footer .submit{
     
     .six-steps-ligh-gray::before{
         border: none;
-    }
-    
-    .reviews-submit{
-        top: 
     }
     
     .border-dotted-reviews{
@@ -1675,7 +1678,6 @@ footer .submit{
         top: 600px!important
     }
     
-    
     .how-we-work-flex{
         padding-left: 50px;
         padding-right: 50px;
@@ -1701,13 +1703,9 @@ footer .submit{
         padding-right: 50px;
     }
     
-     .how-we-work-flex-item{
-    }
-    
     .why-us-company{
         margin-left: 180px;
     }
-    
 }
 
 @media (min-width: 450px) and (max-width: 500px){
@@ -1735,32 +1733,13 @@ footer .submit{
     }
 }
 
-@media (min-width: 421px) and (max-width: 604px){
-    .ask-me-submit{
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 420px){
-    .ask-me input{
-        margin: 0;
-        margin-bottom: 10px;
-    }
-    
-    .green-stripe-type-of-septik{
-        font-size: 11px!important
-    }
-}
-
 @media (max-width: 410px){
-    
     .how-we-work-flex-item{
         width: 100px!important;
     }
 }
 
 @media (max-width: 400px){
-    
     .green-stripe-ask{
         font-size: 7px!important
     }
@@ -1799,52 +1778,14 @@ footer .submit{
 }
 
 @media (max-width: 380px){
-    
     .request{
         left: 1%
     }
     
     .green-stripe-type-of-septik{
-        font-size: 10px!important
+        font-size: 10.5px!important;
     }
 }
-
-@media (max-width: 451px){
-    .ask-me .ask{
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    
-    .ask-me .ask input{
-        margin: 0;
-        width: 49%;
-    }
-    
-    .ask-me .ask .submit{
-        margin-top: 5px;
-    }
-}
-
-@media (max-width: 441px){
-    .instaliation-work-ask{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around
-    }
-    
-    .instaliation-work-ask input{
-        width: 49%;
-        margin: 0;
-    }
-}
-
-@media (max-width: 466px){
-    .correct-work-ask input{
-        margin: 0;
-        width: 49%;
-    }
-}
-
 
 @media (min-width: 320px) and (max-width: 768px) {
     body{
@@ -2006,7 +1947,7 @@ footer .submit{
     
     .green-stripe-ask{
         padding: 0;
-        font-size: 11px;
+        font-size: 12px;
         padding-top: 5px;
         padding-bottom: 5px;
         background: #5ca601;
@@ -2017,8 +1958,20 @@ footer .submit{
         padding-left: 0;
         margin-left: 5px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content:space-around;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .ask-me .ask input{
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    
+    .ask-me .ask .submit{
+        margin-top: 0;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     
     input{
@@ -2027,7 +1980,6 @@ footer .submit{
     
     .row-title{
         font-size: 16px;
-        
         line-height: 1
     }
     
@@ -2036,7 +1988,7 @@ footer .submit{
     }
     
     .row-title-bg-ligh-blue{
-        margin-top: 80px;
+        margin-top: 40px;
         margin-bottom: 20px;
     }
     
@@ -2091,7 +2043,6 @@ footer .submit{
     .device-pluses{
         display: none
     }
-    
     
     .row-title-green{
         color: #5ca600;
@@ -2160,8 +2111,21 @@ footer .submit{
         display: none;
     }
     
+    .instaliation-work-ask{
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .instaliation-work-ask input{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
     .instaliation-work-ask .submit{
-        margin-top: 5px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     
     .correct-work-title{
@@ -2184,6 +2148,18 @@ footer .submit{
     
     .border-dotted-green{
         border: 2px dotted #5ca600;
+    }
+    
+    .correct-work-ask input, .correct-work-ask .submit{
+        margin-right: 0;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    
+    .correct-work-ask .submit{
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0!important;
     }
     
     .border-dotted-green h3{
@@ -2233,9 +2209,6 @@ footer .submit{
     }
     
     .correct-work-ask{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
         margin-top: 10px;
     }
     
@@ -2321,7 +2294,7 @@ footer .submit{
     
     footer{
         max-width: 10;
-            padding-top: 10px;
+        padding-top: 10px;
     }
     
     footer .container{
@@ -2345,7 +2318,6 @@ footer .submit{
     }
     
     .bottom-footer p{
-        
         padding-left: 10px;
         padding-right: 10px;
     }
