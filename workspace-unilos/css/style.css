@@ -2029,12 +2029,13 @@ footer .submit{
     }
     
     .advantages-content{
-        width: 100%;
+        width: 90%;
         max-width: 100%;
     }
     
     .advantages-img-xs{
-        width: 100%;
+        width: 99%;
+        padding: 0;
     }
     
     .advantages-content-title{
@@ -2054,6 +2055,7 @@ footer .submit{
     .advantages-bottom h3{
         margin-top: 40%;
         text-align: center;
+        width: 90%;
         background: #f3721b;
         font-size: 12px;
     }
