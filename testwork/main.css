@@ -1,0 +1,760 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.top-section{
+    background: url(img/bg-top-section.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+
+nav{
+    border: none!important;
+    background: none!important;
+    padding-top: 54px;
+}
+
+.navbar-nav a{
+    color: #fff!important;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.top-section-text{
+    margin-top: 300px;
+    margin-bottom: 315px;
+    text-align: center;
+}
+
+.top-section-text h1{
+    font-family: 'Exo 2.0 Medium', arial;
+    font-style: italic;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 89px;
+}
+
+.top-section-text span{
+    font-size: 24px;
+    font-style: normal;
+    font-family: 'Exo 2.0 Light', arial;
+}
+
+.top-section-text a{
+    background:#f44009;
+    padding:28px 24px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Exo 2.0', arial;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.top-section-bottom{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Exo 2.0', arial;
+}
+
+.top-section-bottom p{
+    margin-bottom: 0;
+}
+
+.top-section-bottom span{
+    font-size: 30px;
+    margin-top: 28px;
+    margin-bottom: 37px;
+}
+
+.left-content h3{
+    text-align:left;
+    font-family: 'Exo 2.0 Medium', arial;
+    margin-top: 44px;
+    font-style: italic;
+    color: #000;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.nav-pills{
+    margin: 44px 0px 23px 46px;
+    display: block
+}
+
+.nav-pills li{
+    margin-right: 25px;
+}
+
+.nav-pills li a{
+    background: #fff!important;
+    font-size: 20px;
+    font-family: 'Exo 2.0 Medium', arial;
+    
+}
+
+.nav-pills .active a{
+    border: 1px solid #f44009;
+    color: #f44009!important
+}
+
+.nav-pills a{
+    text-transform: uppercase;
+    color: #707070;
+    padding: 13px 24px!important;
+    border-radius: 6px!important;
+}
+
+.nav-pills a:hover{
+    border: 1px solid #f44009;
+     color: #f44009!important
+}
+
+.monthly{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Exo 2.0', arial;
+    display: block;
+    margin-left: 46px;
+}
+
+.radiobuttons{
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.button{
+    margin-right: 33px;
+}
+
+input[type=radio] {display: none;}
+
+input[type=radio] + label:before {
+    content: "";
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #d1d1d1;
+    margin: -5px 5px 0 0;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle; 
+}
+input[type=radio]:checked + label:before { 
+    background: url(img/bg-radio.png) no-repeat 50%;
+}
+
+.help{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Exo 2.0 Light', arial;
+    margin-left: 45px;
+    padding-left: 0;
+}
+
+.help input{
+    padding:14px 20px;
+    font-size: 18px; color: #ababab;
+    border: 1px solid #ababab;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    max-height: 40px;
+}
+
+.help span{
+    font-family: 'Exo 2.0', arial;
+    margin-bottom: 25px;
+    text-align: center
+}
+
+.help button{
+    text-transform: uppercase;
+    background: #f44009;
+    border-radius: 6px;
+    font-size: 25px; color: #fff;
+    padding: 14px 0;
+}
+
+.offer {
+    margin-left: 45px;
+    padding-left: 0;
+    font-family: 'Exo 2.0, arial;
+}
+
+.offer p{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.offer p a{
+    margin-left: 5px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.pay-method{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.carousel-control.left{
+    background: rgba(0, 0, 0, .4);
+    width: 80px;
+}
+
+.carousel-control.right{
+    width: 80px;
+    background: rgba(0, 0, 0, .4);
+}
+
+.carousel{
+    height: 750px;
+    padding: 0;
+}
+
+.carousel img{
+    height: 750px!important;
+    width: 100%;
+}
+
+.carousel .item{
+    width: 
+}
+
+.carousel-caption{
+    left: 90px;
+    text-align: left
+}
+
+.carousel-caption h3{
+    font-family: 'Exo 2.0 Medium', arial;
+    font-style: italic;
+    font-size: 50px;
+    margin-bottom: 32px;
+}
+
+.carousel-caption p{
+    font-size: 17px;
+    font-family: 'Exo 2.0 Light', arial;
+}
+
+.fires-row{
+    background: url(img/bg-fires.png) no-repeat 0;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 350px;
+    margin-top: -10px;
+}
+
+.fires-item{
+    font-size: 35px;
+    font-family: 'Exo 2.0 Medium', arial;
+    font-style: italic;
+    margin-top: 75px;
+    margin-bottom: 0;
+}
+
+.animals{
+    display: flex;
+}
+
+.animals-item{
+    width: 33.333%;
+    margin-top: 54px;
+}
+
+.animals-item img{
+    width: 100%;
+    position: relative;
+}
+
+.animals-item:nth-child(3) img{
+    margin-top: -25px;
+}
+
+.animals-item:nth-child(2) p{
+    margin-left: 90px
+}
+
+.animals-item:nth-child(3) p{
+    margin-top: -90px;
+    margin-left: 90px
+}
+
+.animals-item p{
+    font-family: 'Exo 2.0 Medium', arial;
+    font-size: 35px;
+    margin-top: -115px
+}
+
+.animals-item p span{
+    font-size: 18px;
+    display: block
+}
+
+.bottom-fire{
+    text-align: center;
+    font-family: 'Exo 2.0 Medium', arial;
+    font-size: 20px;
+    margin-left: 50px;
+    color: #bbbbbd;
+    margin-top: 45px;
+    margin-bottom: 72px;
+}
+
+.destroy-row{
+    margin-top: -380px;
+}
+
+.destroy{
+    display: flex;
+    justify-content: center
+}
+
+.destroy-title{
+    font-style: italic;
+    font-family: 'Exo 2.0 Medium', arial;
+    font-size: 35px;
+    margin: 79px 0 69px;
+}
+
+.destroy-item{
+    padding: 0px;
+}
+
+.destroy-item-left{
+    margin-right: 15px;
+    margin-left: 28px;
+    text-align: right
+}
+
+.destroy-item-right{
+    margin-left: 102px;
+    text-align: left
+}
+
+.destroy-item p{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Exo 2.0 Medium', arial;
+}
+
+.top-destroy{
+    margin-bottom: 0;
+}
+
+.middle-destroy{
+    font-size: 30px;
+    font-weight: bold;
+    color: #f44009;
+    margin: 0 0 14px;
+    display: block
+}
+
+.bottom-destroy{
+    font-size: 14px;
+    display: block;
+    margin-top: -20px;
+    text-transform: none!important
+}
+
+.destroy-title{
+    text-align: center
+}
+
+.herbal-fire{
+    background: url(img/bg-herbal-fire.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+
+.herbal-fire-title{
+    color: #fff;
+    font-size: 45px;
+    font-family: 'Exo 2.0 Medium', arial;
+    margin-bottom: 0;
+    margin-top: 54px;
+}
+
+.herbal-fire-title span{
+    font-size: 22px;
+    display: block;
+    margin: 26px 0 62px;
+}
+
+.fire-man-title{
+    font-size: 55px;
+    font-weight: bolder;
+      font-family: 'Exo 2.0 Extra Bold', arial;
+    font-style: italic;
+    color: #303030;
+    text-transform: uppercase;
+    margin: 86px 0 22px;
+}
+
+.bolder{
+    color: #f44009
+}
+
+.normal{
+    font-weight: 400;
+    display: block;
+    font-family: 'Exo 2.0 Medium', arial;
+}
+
+.top-fire-man p{
+    font-size: 16px;
+    font-family: 'Exo 2.0 Medium', arial;
+    margin-bottom: 65px;
+}
+
+.fire-man-row-bottom{
+    background: #252b37;
+}
+
+.bottom-fire-man-container{
+    position: relative;
+}
+
+.bottom-fire-man img{
+    position: absolute;
+    bottom: 0;
+    left: -170px
+}
+
+.bottom-fire-man-text{
+    display: flex;
+    padding: 70px 0;
+    text-align: right
+}
+
+.price-education{
+    font-size: 35px;
+    font-family: 'Exo 2.0 Medium', arial;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.price-education span{
+    text-transform: uppercase;
+    color: #f44009;
+    font-weight: bold;
+}
+
+.help-education{
+    background: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 25px 18px;
+    font-family: 'Exo 2.0', arial;
+    font-size: 20px;
+    margin-left: 72px;
+    max-height: 80px;
+}
+
+.bg-blue{
+    background: #1e1f27;
+}
+
+.top-footer{
+    text-align: center;
+    color: #fff;
+}
+
+.top-footer h3{
+    margin-top: 40px;
+    margin-bottom: 35px;
+    font-size: 25px;
+    font-family: 'Exo 2.0 Medium', arial;
+}
+
+footer .navbar{
+    padding-top: 20px
+}
+
+.top-footer a{
+    background: #f44009;
+    border-radius: 9px;
+    padding: 24px 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Exo 2.0', arial;
+}
+
+.bg-light-blue{
+    background: #262831;
+    color: #727a8b;
+    text-align: center
+}
+
+.bottom-footer-text span{
+     color: #9d9ea0;   
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .pay-method{
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    
+    .pay-method img{
+        margin-right: 5px;
+    }
+    
+    .carousel{
+        padding: 0;
+    }
+    
+    .destroy{
+        margin-bottom: 50px;
+    }
+    
+    .help-education{
+        max-height: 100%
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .pay-method{
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    
+    .pay-method img{
+        margin-right: 5px;
+    }
+    
+    .carousel{
+        padding: 0;
+    }
+    
+    .fires-row{
+        margin-top: -53px
+    }
+    
+    .animals-item:nth-child(3) img{
+    margin-top: -25px;
+    }
+
+    .animals-item:nth-child(2) p{
+        margin-left: 90px
+    }
+
+    .animals-item:nth-child(3) p{
+        margin-left: 90px;
+        margin-top: 25px
+    }
+
+
+    .animals-item p{
+        font-family: 'Exo 2.0 Medium', arial;
+        font-size: 35px;
+        margin-top: 0px
+    }
+    .destroy{
+        margin-bottom: 50px;
+    }
+    
+    .bottom-fire-man-text{
+        flex-direction: column
+    }
+    
+    .price-education{
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .top-section .navbar{
+        padding-top: 10px;
+        margin-bottom: 0
+    }
+    
+    .top-section{
+        height: 100vh;
+    }
+    
+    .top-section-text{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .top-section-text h1{
+        margin-top: 0;
+        font-size: 35px;
+        margin-bottom: 45px;
+    }
+    
+    .collapse{
+        display: block!important;
+    }
+    
+    .carousel, {
+        height: 500px!important;
+    }
+    
+    .carousel img{
+    height: 500px!important;
+    width: 100%;
+}
+    .carousel-control.left, .carousel-control.right{
+        height: 500px;
+    }
+    
+    .pay-method{
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    
+    .left-content h3{
+        text-align: center;
+    }
+    
+    .radiobuttons{
+        flex-direction: column
+    }
+    
+    .pay-method img{
+        margin-right: 5px;
+    }
+    
+    .fires-row{
+        margin-top: -285px;
+    }
+    
+    .destroy-title{
+        margin-top: 40px;
+        margin-bottom: 20px
+    }
+    
+    .animals-item p{
+        font-family: 'Exo 2.0 Medium', arial;
+        font-size: 35px;
+        margin-top: 0px
+    }
+    
+    .animals-item:nth-child(3) p{
+        margin-left: 90px;
+        margin-top: 25px
+    }
+    
+    
+    
+    .destroy{
+        margin-bottom: 50px;
+    }
+    
+    .herbal-fire-title{
+        text-align: center;
+    }
+    
+    .fire-man-row-top{
+        padding-bottom: 0px;
+    }
+    
+    .fire-man-title{
+        font-size: 45px;
+        text-align: right;
+        margin-top: 20px;
+    }
+    
+    .top-fire-man p{
+        text-align: right;
+    }
+    
+    .bottom-fire-man-text{
+        flex-direction: column;
+    }
+    
+    .price-education{
+        margin-bottom: 20px;
+    }
+    
+    footer .navbar-default{
+        margin-top: 30px;
+    }
+    
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border: none!important;
+    }
+    
+}
+
+@media (max-width: 600px){
+    
+    .fire-man-title{
+        text-align: center
+    }
+    
+    .top-fire-man p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .bottom-fire-man img{
+        width: 350px;
+        left: -100px
+    }
+    
+    .help-education {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .top-section-text a{
+        padding: 15px;
+    }
+    
+    .carousel-control{
+        display: none!important;
+    }
+    
+    .carousel-caption{
+        left: 5%;
+    }
+}
+
+@media (max-width: 426px){
+    .fires-row{
+        margin-top: -295px;
+    }
+    
+    .animals-item:nth-child(2) p{
+        margin-left: 40px;
+    }
+    
+    .animals-item:nth-child(3) p{
+        margin-left: 40px;
+    }
+    
+    .top-section-text h1{
+        margin-top: 50px;
+        font-size: 25px;
+        margin-bottom: 80px;
+    }
+    .destroy-item p{
+        font-size: 20px;
+    }
+    
+    .middle-destroy{
+        font-size: 20px!important
+    }
+}
