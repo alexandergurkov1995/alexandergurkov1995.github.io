@@ -132,8 +132,7 @@ body{
     border-right: 1px solid #dbdbdb;
     display: block;
     text-transform: capitalize;
-    font-size: 16px;
-    padding-left: 31px;
+    font-size: 15px;
 }
 
 .navbar-items a:hover{
@@ -195,95 +194,102 @@ body{
     margin-bottom: 30px;
 }
 
-.vaccination{
-    margin-left: 26px;
-    margin-bottom: 24px;
-}
-
 .vaccination p{
-    text-transform: uppercase;
-    font-size: 24px;
-    font-family:roboto_medium;
-    margin-bottom: 20px;
-}
-
-.vaccination p span{
-    background-color: #383838;
-    color: #fff;
-    border-radius: 5px;
-    padding: 8px 12px;
+    font-size: 24px; text-transform: uppercase;
 }
 
 .vaccination button{
     border: none;
-    background-color: #00a13d;
-    color: #fff;
+    background: #00a13d;
+    color: #fff;font-size: 24px;
     border-radius: 5px;
-    text-transform:uppercase;
-    font-size: 24px;
-    padding: 14px 62px;
-    margin-left: 55px;
-    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    text-transform: uppercase;
+    padding: 15px 10px 15px 20px
 }
+
+.vaccination button span{
+    background: #383838;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: block;
+    margin-left: 22px;
+}
+
 
 .vaccination-second{
-    text-align: center;
-    margin-bottom: 20px;
+    position: static;
+    margin-left: 50%;
 }
-
 
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .navbar-menu{
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     .navbar{
-        flex-wrap: wrap;
         background: #fff;
     }
     
-    .navbar-items:last-child{
-        margin-left: 25%;
-    }
-    
     .navbar-items{
-        width: 49%;
+        width: 20%;
         display: flex;
         background-color: #363636;
         margin: 1px;
     }
     
     .navbar-items a{
-        width: 100%;
-        text-align: center;
+        width: 100%;text-align: left;
+        padding-left: 5px;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px){
+@media only screen and (min-width: 450px) and (max-width: 768px){
     .navbar{
-        flex-wrap: wrap;
         background: #fff;
+        flex-wrap: wrap;
+        justify-content: center
     }
     
     .navbar-items{
-        width: 100%;
+        width: 33%;
         display: flex;
         background-color: #363636;
         margin: 1px;
     }
     
+    .navbar-items img{
+        height: 12px;
+        width: 12px;
+    }
+    
     .navbar-items a{
+        width: 100%;text-align: left;
+        padding-left: 5px;
+        font-size: 14px
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 450px){
+   .navbar{
+        background: #fff;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    
+    .navbar-items{
         width: 50%;
-        margin-left: 25%;
         display: flex;
+        background-color: #363636;
+        margin: 1px;
     }
-}
-
-@media only screen and (max-width: 400px){
+    
     .navbar-items a{
-        margin-left: 0;
-        width: 100%;
+        width: 100%;text-align: left;
+        padding-left: 5px;
+        font-size: 14px
     }
 }
