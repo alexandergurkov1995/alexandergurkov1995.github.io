@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+@font-face{
+    src:url(/fonts/roboto_regular.ttf);
+    font-family:roboto_regular;
+}
+
+@font-face{
+    src:url(/fonts/roboto_medium.ttf);
+    font-family:roboto_medium;
+}
+
+body{
+    font-family:roboto_regular;
+    overflow-x: hidden;
+    color: #383838;
+    padding: 20px;
+}
+
+.row-kind-of-work, .price{
+    border: 2px solid #dddddd;
+}
+
+.row-kind-of-work{
+    display: inline-block;
+    width: 100%;
+    margin:auto;
+}
+
+.kind-of-work{
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 108px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.work-items{
+    background-color: #363636;
+    margin-bottom: 1px;
+    padding: 10px 52px 10px 24px;
+    color: #dbdbdb;
+}
+
+.work-items a{
+    display: flex;
+    width: 100%;
+    color: #dbdbdb;
+}
+
+.active{
+    border-radius: 6px 6px 0 0;
+    background-color: #00a13d;
+}
+
+.work-items:last-child{
+    border-radius: 0 0 6px 6px;
+}
+
+.work-items:hover{
+    background-color: #00a13d;
+    cursor: pointer
+}
+
+.work-items p{
+    font-size: 16px;
+    text-transform:capitalize;
+}
+
+.work-items img{
+    margin-right: 5px;
+    max-height: 13px;
+    max-width: 14px;
+    margin-top: 2px;
+}
+
+.navbar-menu{
+    border: 2px solid #dddddd;
+    padding:20px 10px 40px;
+    clear: both;
+    margin-top: 20px;
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family:roboto_medium;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar{
+    display: flex;
+    background-color: #363636;
+    margin-bottom: 1px;
+}
+
+.navbar-top{
+    margin-top: 20px;
+}
+
+.navbar-items{
+    width: 20%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 5px;
+}
+
+.navbar-items img{
+    margin-right: 5px;
+    max-width: 14px;
+    max-height: 13px;
+    margin-top: 3px;
+}
+
+.navbar-items a{
+    color: #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    display: block;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.navbar-items a:hover{
+    color: #00a13d
+}
+
+.price{
+    padding: 15px;
+}
+
+.price-items-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.price-items-head{
+    text-transform: uppercase;
+    font-family:roboto_medium;
+    font-size: 16px;
+    background-color: #ebebeb;
+    padding: 12px 22px;
+}
+
+.price-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-items:not(.price-items-head){
+    padding: 20px 0;
+    border-bottom: 1px solid #d1d1d1;
+    margin-left: 22px;
+    margin-right: 15px;
+}
+
+.name{
+    text-transform: capitalize;
+}
+
+.price-text{
+    color: #00a13d;
+    font-family:roboto_medium;
+}
+
+.disease{
+    margin: 20px;
+    border-bottom: 2px solid #d1d1d1;
+    padding:0 20px;
+}
+
+.disease-title{
+    font-size: 16px;
+    margin-bottom: 18px;
+    font-family:roboto_medium;
+}
+
+.disease-items p:not(.disease-title){
+    margin-bottom: 30px;
+}
+
+.vaccination p{
+    font-size: 24px; text-transform: uppercase;
+}
+
+.vaccination button{
+    border: none;
+    background: #00a13d;
+    color: #fff;font-size: 24px;
+    border-radius: 5px;
+    display: flex;
+    align-items: baseline;
+    text-transform: uppercase;
+    padding: 15px 10px 15px 20px
+}
+
+.vaccination button span{
+    background: #383838;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: block;
+    margin-left: 22px;
+}
+
+
+.vaccination-second{
+    position: static;
+    margin-left: 50%;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .navbar-menu{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .navbar{
+        background: #fff;
+    }
+    
+    .navbar-items{
+        width: 20%;
+        display: flex;
+        background-color: #363636;
+        margin: 1px;
+    }
+    
+    .navbar-items a{
+        width: 100%;text-align: left;
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 768px){
+    .navbar{
+        background: #fff;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    
+    .navbar-items{
+        width: 33%;
+        display: flex;
+        background-color: #363636;
+        margin: 1px;
+    }
+    
+    .navbar-items img{
+        height: 12px;
+        width: 12px;
+    }
+    
+    .navbar-items a{
+        width: 100%;text-align: left;
+        padding-left: 5px;
+        font-size: 14px
+    }
+    
+    .vaccination-second{
+        position: static;
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 450px){
+   .navbar{
+        background: #fff;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    
+    .navbar-items{
+        width: 50%;
+        display: flex;
+        background-color: #363636;
+        margin: 1px;
+    }
+    
+    .navbar-items a{
+        width: 100%;text-align: left;
+        padding-left: 5px;
+        font-size: 14px
+    }
+    
+    .vaccination button{
+        font-size: 15px
+    }
+    
+    .vaccination-second{
+        position: static;
+        margin-left: 20%;
+    }
+}
