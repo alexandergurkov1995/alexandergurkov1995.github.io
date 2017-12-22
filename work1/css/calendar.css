@@ -1,0 +1,51 @@
+@font-face{
+    src:url(../fonts/roboto-regular.ttf);
+    font-family:roboto-regular;
+}
+
+
+#calendar {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+    font-family:roboto-regular;
+}
+
+
+#calendar thead tr:first-child{
+    background: #e63946;
+}
+
+#calendar .glyphicon{
+    color: #fff;
+}
+
+.month{
+    color: #fff;
+}
+
+#calendar thead tr:last-child {
+    color: #fff;
+    font-size: 12px;
+    background: #3c464d;
+}
+
+
+#calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+
+
+#calendar tbody td {
+    color: #707a82;
+}
+
+
+#calendar tbody td.today {
+    background: #e63946;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+

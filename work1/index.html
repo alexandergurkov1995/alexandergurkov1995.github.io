@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medicine university</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+      <link rel="stylesheet" href="css/calendar.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Script for Log-in form -->
+         <script>
+            $(document).ready(function (){
+                $('.log-in-button').click (function(e){
+                    $('.content1').toggle();
+
+                    e.stopPropagation();
+                });
+
+                    $('.content1').click(function (e) {
+                        e.stopPropagation();
+                    });
+
+            })
+          </script>
+          
+          <!-- Script for Tabs -->
+         <script>
+                $('#myTab a').click(function (e) {
+                  e.preventDefault()
+                  $(this).tab('show')
+                })
+             
+                $('#myTab a[href="#profile"]').tab('show') // Select tab by name
+                $('#myTab a:first').tab('show') // Select first tab
+                $('#myTab a:last').tab('show') // Select last tab
+                $('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
+         </script>
+         
+         <script>
+            $(document).ready(function (){
+                $('.follow-btn').click (function(e){
+                    $('.follow-icons').toggle();
+
+                    e.stopPropagation();
+                });
+
+                    $('.follow-icons').click(function (e) {
+                        e.stopPropagation();
+                    });
+
+            })
+         </script>
+         
+           <style type="text/css">
+            html, body {
+              margin: 0;
+              padding: 0;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            .slider {
+                width: 100%;
+                margin: 100px auto;
+            }
+
+            .slick-slide {
+              margin: 0px 20px;
+            }
+
+            .slick-slide img {
+              width: 100%;
+            }
+
+            .slick-prev:before,
+            .slick-next:before {
+              color: black;
+            }
+
+
+            .slick-slide {
+              transition: all ease-in-out .3s;
+              opacity: .2;
+            }
+
+            .slick-active {
+              opacity: .5;
+            }
+
+            .slick-current {
+              opacity: 1;
+            }
+            
+          </style>
+  </head>
+  <body>
+   
+   <div class="content1" id="content1" style="display:none; cursor: pointer">
+       <div class="row login-form-row">
+           <div class="container">
+               <div class="login-form ">
+                   <form class="log-in">
+                       <input class="username" type="text" value="username" name="username">
+                       <input class="password" type="text" value="password">
+                       <button class="get-start"><span class="hidden-lg hidden-md gidden-sm">log in</span></button>
+                   </form>
+
+                   <p>Forgot your usename or password?</p>
+               </div>
+           </div>
+       </div>
+    </div>
+   
+   <header>
+       <div class="row">
+           <div class="container">
+               <div class="logo col-lg-5 col-md-5 col-sm-5 col-xs-11">
+                  <a href="#">
+                   <img src="img/logo-i-orzel.png" alt="logo">
+                   </a>
+               </div>
+               
+               <div class="icons icons-top pull-right">
+                   <form  class="site-form">
+                       <button class="search-button"></button>
+                            <button type="button" class="log-in-button" id="link"></button>
+                   </form>
+
+                   <div class="social-icons">
+                      <button type="button" class="follow-btn" style="display: none"><span class="glyphicon gglyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button>
+                      <div class="follow-icons">
+                           <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="social"></a>
+                           <a href="https://twitter.com/?lang=ru" target="_blank"><img src="img/twitter.png" alt="social"></a>
+                           <a href="https://www.instagram.com/?hl=ru" target="_blank"><img src="img/instagram.png" alt="social"></a>
+                           <a href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank"><img src="img/youtube.png" alt="social"></a>
+                           <a href="https://ru.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt="social"></a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       
+       <div class="row nav-row">
+           <div class="container">
+               <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#"><img src="img/nav-logo.gif" alt=""></a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">One more separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Curabitur aliquet </a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Quam id dui </a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">posuere blandit </a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Cras ultricies ligula </a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Sed magna </a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Dictum porta</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Work</a></li>
+                    
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown dropdown-language">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/British-Virgin-Islands.png" alt="lang">En<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#"><img src="img/Russia.png" alt="lang">Ru</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><img src="img/France.png" alt="lang">Fr</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><img src="img/Italy.png" alt="lang">It</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+           </div>
+       </div>
+   </header>
+   
+   <div class="row student-row">
+       <div class="container">
+           <div class="learning-theme col-lg-6">
+              <h1>Welcome to New Learning <br> Theme </h1>
+              <p>Donec imperdiet justo est vel blandit elit pulvinar in Sed nunc</p>
+               <a href="#" class="green">get started</a>
+           </div>
+       </div>
+   </div>
+   
+   <div class="row some-about-us-row">
+       <div class="container">
+           <div class="some-about-us">
+              <div class="some-about-us-text col-lg-6 col-md-6 col-sm-12">
+                   <h1>some word about us</h1>
+                   <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                   <a href="" class="red">get started</a>
+               </div>
+               
+               <div class="some-about-us-gallery col-lg-6 col-md-6 col-sm-12">
+                  <a href="#" class="link-about-us">
+                       <div class="some-about-us-gallery-items gallery-items-1 col-lg-5 col-md-5 col-sm-6">
+                           <h3>professional design</h3>
+                           <div class="border-bottom"></div>
+                       </div>
+                   </a>
+                   <a href="#" class="link-about-us">
+                       <div class="some-about-us-gallery-items gallery-items-2 col-lg-5 col-md-5 col-sm-6">
+                           <h3>clean code</h3>
+                           <div class="border-bottom"></div>
+                       </div>
+                   </a>
+                   <a href="#" class="link-about-us">
+                       <div class="some-about-us-gallery-items gallery-items-3 col-lg-5 col-md-5 col-sm-6">
+                           <h3>detailed documentation</h3>
+                           <div class="border-bottom"></div>
+                       </div>
+                   </a>
+                   <a href="#" class="link-about-us">   
+                       <div class="some-about-us-gallery-items gallery-items-4 col-lg-5 col-md-5 col-sm-6">
+                           <h3>best support</h3>
+                           <div class="border-bottom"></div>
+                       </div>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   <div class="row icons-row">
+       <div class="container">
+           <div class="icons">
+               <div class="icons-item col-lg-3 col-md-3 col-sm-6">
+                   <div class="top-icon top-icon-first col-lg-6 col-lg-offset-3">
+                       <img src="img/circle.png" alt="icon" class="col-lg-12 visible-img">
+                       <img src="img/circle-white.png" alt="icon" class="col-lg-12 hidden-img">
+                   </div>
+                   <p class="title-icons col-lg-12">Donec velit neue</p>
+                   <p>Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+               </div>
+               <div class="icons-item col-lg-3  col-md-3 col-sm-6">
+                   <div class="top-icon top-icon-second col-lg-6 col-lg-offset-3">
+                       <img src="img/coffee.png" alt="icon" class="col-lg-12 visible-img">
+                       <img src="img/coffee-white.png" alt="icon" class="col-lg-12 hidden-img">
+                    </div>
+                    <p class="title-icons col-lg-12">Donec velit neue</p>
+                   <p>Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+               </div>
+               <div class="icons-item col-lg-3 col-md-3 col-sm-6">
+                   <div class="top-icon top-icon-third col-lg-6 col-lg-offset-3">
+                       <img src="img/rocket.png" alt="icon" class="col-lg-12 visible-img">
+                       <img src="img/rocket-white.png" alt="alt" class="col-lg-12 hidden-img">
+                   </div>
+                    <p class="title-icons col-lg-12">Donec velit neue</p>
+                   <p>Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+               </div>
+               <div class="icons-item col-lg-3 col-md-3 col-sm-6">
+                   <div class="top-icon top-icon-fourth col-lg-6 col-lg-offset-3">
+                       <img src="img/lego.png" alt="icon" class="col-lg-12 visible-img">
+                       <img src="img/lego-white.png" alt="icon" class="col-lg-12 hidden-img">
+                   </div>
+                    <p class="title-icons col-lg-12">Donec velit neue</p>
+                   <p>Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   <div class="row tabs-row">
+       <div class="container tabs-container">
+           <div class="video col-lg-6 col-md-6">
+               <iframe width="100%" height="403" src="https://www.youtube.com/embed/YgmIibSnZs0?start=600" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+           </div>
+           
+           <div class="tabs col-lg-6 col-md-6">
+          <ul class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Tab 1</a></li>
+              <li><a href="#profile" data-toggle="tab">Tab 2</a></li>
+              <li><a href="#messages" data-toggle="tab">Tab 3</a></li>
+            </ul>
+            
+            <div class="tab-content">
+          <div class="tab-pane active" id="home">
+              <p class="tabs-title">Donec velit neue</p>
+              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam at consequuntur tenetur neque fugit ad tempora iure iusto eligendi dolor deleniti reprehenderit impedit, laboriosam, necessitatibus quo blanditiis aut ab libero?</p>
+
+              <div class="tab-links">
+                  <a href="#" class="green">get started</a>
+                  <a href="#" class="yellow">get started</a>
+              </div>
+
+          </div>
+          <div class="tab-pane" id="profile">
+              <p class="tabs-title">Lorem ipsun lorem</p>
+              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam at consequuntur tenetur neque fugit ad tempora iure iusto eligendi dolor deleniti reprehenderit impedit, laboriosam, necessitatibus quo blanditiis aut ab libero?</p>
+
+              <div class="tab-links">
+                  <a href="#" class="green">get started</a>
+              </div>
+
+          </div>
+          <div class="tab-pane" id="messages">
+              <p class="tabs-title">Lorem ipsum</p>
+              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam at consequuntur tenetur neque fugit ad tempora iure iusto eligendi dolor deleniti reprehenderit impedit, laboriosam, necessitatibus quo blanditiis aut ab libero?</p>
+
+              <div class="tab-links">
+                  <a href="#" class="yellow">get started</a>
+              </div>
+
+          </div>
+        </div>
+      </div>
+       </div>
+   </div>
+   
+   <div class="row slider-row">
+       <div class="container slider-container">
+             <section class="regular slider hidden-xs">
+                <div class="col-lg-3 col-md-3 ">
+                    <img src="img/carousel-img-1.png" alt="carousel">
+                    <h4>detailed documentation</h4>
+                       <div class="border-bottom"></div>
+                       <p>Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 ">
+                    <img src="img/carousel-img-2.png" alt="carousel">
+                    <h4>detailed documentation</h4>
+                       <div class="border-bottom"></div>
+                       <p>Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 ">
+                    <img src="img/carousel-img-3.png" alt="carousel">
+                    <a href="#" class="yellow">get started</a>
+                </div>
+                <div class="col-lg-3 col-md-3 ">
+                    <img src="img/carousel-img-4.png" alt="carousel">
+                    <h4>detailed documentation</h4>
+                       <div class="border-bottom"></div>
+                       <p>Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 ">
+                    <img src="img/carousel-img-1.png" alt="carousel">
+                    <h4>detailed documentation</h4>
+                       <div class="border-bottom"></div>
+                       <p>Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus.</p>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <img src="img/carousel-img-2.png" alt="carousel">
+                    <h4>detailed documentation</h4>
+                       <div class="border-bottom"></div>
+                       <p>Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus.</p>
+                </div>
+          </section>
+           <section class="lazy slider hidden-lg hidden-sm hidden-md" data-sizes="50vw">
+            <div class=" ">
+                    <img src="img/carousel-img-1.png" alt="carousel">
+                    <h4>detailed documentation</h4>
+                       <div class="border-bottom"></div>
+                       <p>Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus.</p>
+                </div>
+                <div class=" ">
+                    <img src="img/carousel-img-2.png" alt="carousel">
+                    <h4>detailed documentation</h4>
+                       <div class="border-bottom"></div>
+                       <p>Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus.</p>
+                </div>
+                <div class=" ">
+                    <img src="img/carousel-img-3.png" alt="carousel">
+                    <a href="#" class="yellow">get started</a>
+                </div>
+                <div class=" ">
+                    <img src="img/carousel-img-4.png" alt="carousel">
+                    <h4>detailed documentation</h4>
+                       <div class="border-bottom"></div>
+                       <p>Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus.</p>
+                </div>
+          </section>
+       </div>
+   </div>
+         
+    <footer>    
+         <div class="row top-footer">
+             <div class="container">
+                  <div class="footer-top">
+                      <p class="col-lg-8 col-md-8 col-sm-7">Like What You See? Save Money and Time. Get New Learning Theme Now.</p> <a href="#" class="green">get started</a>
+                  </div>
+             </div>
+         </div>
+          
+   
+   <div class="row middle-footer">
+       <div class="container">
+               <div align=center class="col-lg-3 col-md-3 col-sm-4">
+                <div style=" padding:6px;">
+                <table id="calendar"  border="0" cellspacing="0" cellpadding="1">
+                  <thead>
+                      <tr><td><b><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></b></td><td colspan="5" class="month"></td><td><b><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></b></td></tr>
+                      <tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                </div>
+                </div> 
+                
+                <div class="quick-links col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-4">
+                    <h4>quick links</h4>
+                    <a href="">Nulla porttitor accumsan </a>
+                    <a href="">Sed porttitor lectus nibh</a>
+                    <a href="">Proin eget tortor risus</a>
+                    <a href="">Donec sollicitudin molestie</a>
+                    <a href="">Quisque velit nisi</a>
+                </div>
+                
+                <div class="quick-links-2 col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4">
+                    <h4>new learning college</h4>
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                    <a href=""><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>contact@website.com</a>
+                    <a href=""><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+12 345 67 89</a>
+                    <a href=""><span class="glyphicon glyphicon-print" aria-hidden="true"></span>+12 345 67 89</a>
+                </div>
+       </div>
+   </div>
+   
+   <div class="row row-bottom-footer">
+       <div class="container">
+          <div class="bottom-footer">
+           <p class="col-lg-4 col-md-5 col-sm-8">Copyright (c) New Learning 2017. All Rights Reserved.</p>
+                   <div class="social-icons pull-right">
+                       <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="social"></a>
+                       <a href="https://twitter.com/?lang=ru" target="_blank"><img src="img/twitter.png" alt="social"></a>
+                       <a href="https://www.instagram.com/?hl=ru" target="_blank"><img src="img/instagram.png" alt="social"></a>
+                       <a href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank"><img src="img/youtube.png" alt="social"></a>
+                       <a href="https://ru.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt="social"></a>
+                   </div>
+            </div>       
+       </div>
+   </div>
+       
+   </footer> 
+   
+   
+    <script src="js/calendar.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+      <script type="text/javascript">
+        $(document).on('ready', function() {
+          $(".vertical-center-4").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 4,
+            slidesToScroll: 2
+          });
+          $(".vertical-center-3").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+          $(".vertical-center-2").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 2,
+            slidesToScroll: 2
+          });
+          $(".vertical-center").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+          });
+          $(".vertical").slick({
+            dots: true,
+            vertical: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+          $(".regular").slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+          $(".center").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 5,
+            slidesToScroll: 3
+          });
+          $(".variable").slick({
+            dots: true,
+            infinite: true,
+            variableWidth: true
+          });
+          $(".lazy").slick({
+            lazyLoad: 'ondemand', // ondemand progressive anticipated
+            infinite: true
+          });
+        });
+    </script>
+  </body>
+</html>
