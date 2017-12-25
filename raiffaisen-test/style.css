@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{
+    list-style: none;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+@font-face{
+    font-family:futurabook;
+    src: url(fonts/futurabook.otf);
+}
+
+@font-face{
+    font-family:futurademi;
+    src: url(fonts/futurademi.otf);
+}
+
+.container{
+    width: 1200px;
+    padding: 0 30px;
+    margin:0 auto;
+}
+
+section{
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.section1{
+    background: url(img/bg-section-1.jpg) no-repeat 0 0;
+    background-size: cover
+}
+
+.top-title{
+    text-transform: uppercase;
+    color: #303030;
+    font-size: 42px;
+    font-family:futurademi;
+    line-height: 1.2;
+    margin-top: 140px;
+    margin-bottom: 95px;
+}
+
+.top-title span{
+    font-size: 35px;
+    font-family:futurabook;
+}
+
+.go-down{
+    text-align: center;
+    display: block;
+}
+
+.go-down p{
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 2px rgba(145, 150, 150, 1);
+    font-family:futurabook;
+}
+
+.go-down p span{
+    text-transform: capitalize;
+}
+
+.about-us-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-bottom: 250px;
+}
+
+.about-us-flex-item{
+    background: #fff;
+    margin-bottom: 15px;
+    margin-right: 52px;
+    width: 345px;
+}
+
+.about-us-flex-item:nth-child(3), .about-us-flex-item:nth-child(6){
+    margin-right: 0;
+}
+
+.about-us-flex-item a{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family:futurabook;
+    color: #000;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+
+.about-text{
+    margin-left: 14px;
+}
+
+.section2{
+    background: url(img/bg-section-2.jpg) no-repeat 0 0;
+    background-size: cover;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.section2 .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ttitle-remote, .ttitle-premium-services, .ttitle-placement-of-funds, .ttitle-credit, .ttitle-free-of-charge-service, .ttitle-income-protection{
+    background:#313e4d url(img/remote-title-img.png) no-repeat 30px 17px;
+    padding: 38px 0;
+    display: flex;
+    position: relative
+}
+
+.ttitle-premium-services{
+    background:#313e4d url(img/ttitle-premium-services-bg.png) no-repeat 30px 17px;
+}
+
+.ttitle-placement-of-funds{
+    background:#313e4d  url(img/ttitle-placement-of-funds-img.png) no-repeat 30px 17px;
+}
+
+.ttitle-credit{
+    background:#313e4d url(img/credit-title-img.png) no-repeat 30px 30px;
+}
+
+.ttitle-free-of-charge-service{
+    background:#313e4d url(img/ttitle-free-of-charge-service-img.png) no-repeat 30px 17px;
+}
+
+.ttitle-income-protection{
+    background:#313e4d url(img/ttitle-income-protection-img.png) no-repeat 30px 27px;
+}
+
+.ttitle-remote h2, .ttitle-premium-services h2, .ttitle-placement-of-funds h2, .ttitle-credit h2, .ttitle-free-of-charge-service h2, .ttitle-income-protection h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+    margin-left: 96px;
+}
+
+.ttitle-remote button, .ttitle-premium-services button, .ttitle-placement-of-funds button, .ttitle-credit button, .ttitle-free-of-charge-service button, .ttitle-income-protection button{
+    right: 30px;
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer
+}
+
+.remote-control, .premium-services, .placement-of-funds, .credit, .free-of-charge-service, .income-protection{
+    background: #fafafa;
+    font-family:futurabook;
+}
+
+.remote-control-flex, .premium-services-flex, .placement-of-funds-flex, .credit-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 49px 30px 64px;
+}
+
+.remote-control-item, .premium-services-item, .credit-item{
+    width: 50%;
+}
+
+.remote-control-item p, .premium-services-item p, .placement-of-funds-item p, .credit p, .free-of-charge-service p, .income-protection p{
+    line-height: 1.5;
+}
+
+.remote-control-item:nth-child(3){
+    padding-top: 50px;
+}
+
+.remote-control-item h3, .premium-services-item h3, .placement-of-funds-item h3, .credit-item h3{
+    text-transform: uppercase;
+    color: #000;
+    line-height: 1.3;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.arrow-blue{
+    color: #74c6c7;
+    font-weight: bold;
+}
+
+.remote-control-item ul{
+    margin-left: 15px;
+    margin-top: 22px;
+    line-height: 1.5
+}
+
+.premium{
+    background:#fff url(img/premium-bg-img.png) no-repeat 0 0;
+    background-size: contain;
+    padding-left: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+}
+
+.premium p{
+    line-height: 1.3;
+    color: #707070;
+}
+
+.premium-line{
+    text-transform: uppercase;
+    font-size: 33px;
+    color: #303030!important;
+}
+
+.phone{
+    font-size: 33px;
+    font-family:futurademi;
+    color: #707070;
+}
+
+.phone span{
+    color: #303030;
+}
+
+.premium-services-item .premium{
+    margin-top: 45px;
+}
+
+.conditions{
+    display: block;
+    margin: 22px 0
+}
+
+.conditions, .conditions:hover{
+    color: #74c6c7;
+    text-decoration: underline;
+}
+
+.conditions img{
+    margin-right: 5px;
+}
+
+.insurance-company{
+    color: #707070;
+}
+
+.placement-of-funds-item{
+    width: 30%;
+}
+
+.deposit{
+    color: #878787;
+    text-transform: capitalize;
+}
+
+.placement-of-funds-item:last-child{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.investments img{
+    margin-right: 10px;
+}
+
+.credit-top-item{
+    width: 100%;
+    margin-bottom: 42px;
+}
+
+.credit-item ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.credit-item ul li{
+    margin-bottom: -60px;
+}
+
+.credit-item ul li a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.credit-item ul li a span{
+    padding-bottom: 60px;
+}
+
+.light-gray{
+    color: #707070;
+    margin: 35px 0;
+}
+
+.free-of-charge-service-flex{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.free-of-charge-item{
+    width: 50%;
+}
+
+.first{
+    background: url(img/free-of-charge-item-1.png) no-repeat 0 0; 
+    background-size: cover;
+    position: relative
+}
+
+.second{
+    background: url(img/free-of-charge-item-2.png) no-repeat 0 0;
+    background-size: cover;
+}
+
+.third{
+    background: url(img/free-of-charge-item-3.png) no-repeat 0 0;
+    background-size: cover;
+}
+
+.fourth{
+    background: url(img/free-of-charge-item-4.png) no-repeat 0 0;
+    background-size: cover;
+}
+
+.second p, .fourth p{
+    padding: 55px 250px 55px 35px;
+}
+
+.first p, .third p{
+    padding: 55px 35px 55px 250px;
+}
+
+.or{
+    background: url(img/bg-or.png) no-repeat 0 0;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    left: 45.5%;
+    top: 42%;
+}
+
+.or span{
+    display: block;
+    position: absolute;
+    left: 35%;
+    top: 42%
+}
+
+.income-protection p{
+    padding: 0 30px;
+    margin: 20px 0;
+}
+
+.top-footer {
+    text-align: center;
+    color: #fff;
+    background: rgba(137, 138, 144, .85);
+    margin: 20px 0 0;
+    padding: 15px 0;
+}
+
+.top-footer .conditions{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.fa{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.bottom-footer{
+    background:#242629; 
+    padding: 15px 0;
+}
+
+.bottom-footer .container{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-family:futurabook;
+}
+
+.email{
+    background: #a7a8a9;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .container{
+        width: 900px;
+    }
+    
+    .about-us-flex{
+        flex-direction: row;
+    }
+    
+    .about-us-flex-item{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .or{
+        left: 44%;
+        top: 46%
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+    .container{
+        width: 700px;
+    }
+    
+    .about-us-flex{
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .about-us-flex-item{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .premium-services-flex{
+        position: relative;
+        padding-bottom: 200px;
+    }
+    
+    .premium{
+        width: 50%;
+        position: absolute;
+        left: 18%;
+        bottom: 50px
+    }
+    
+    .remote-control{
+        position: relative;
+        padding-bottom: 200px;
+    }
+    
+    .placement-of-funds-item, .credit-item, .remote-control-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .first, .second, .third, .fourth{
+        max-height: 200px
+    }
+    
+    .first p, .third p, .second p, .fourth p{
+        padding: 50px
+    }
+    
+    .or{
+        left: 42.5%;
+        top: 38.5%
+    }
+}
+
+@media (min-width:450px) and (max-width:768px){
+    .container {
+        width: 440px;
+    }
+    
+    .section1 .container{
+        padding: 0;
+    }
+    
+    .about-us-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    
+    .about-us-flex-item{
+        margin-right: 0;
+        width: 90%;
+    }
+    
+    .remote-control-item, .premium-services-item, .credit-item, .placement-of-funds-item{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .premium{
+        padding: 10px 0 10px 100px
+    }
+    
+    .remote-control-item .premium .premium-line{
+        font-size: 20px
+    }
+    
+    .credit-item ul{
+        flex-direction: 
+    }
+    
+    .first, .second, .third, .fourth{
+        max-height: 200px
+    }
+    
+    .first p, .second p, .third p, .fourth p{
+        padding: 20px;
+    }
+    
+    .or{
+        left: 38.1%;
+        top: 42.5%
+    }
+    
+    .bottom-footer{
+        justify-content: space-around;
+        display: flex;
+    }
+}
+
+@media (min-width:320px) and (max-width:450px){
+    .container{
+        width: 100%;
+    }
+    
+    .section1 .container{
+        padding: 0;
+    }
+    
+    .about-us-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    
+    .about-us-flex-item{
+        margin-right: 0;
+        width: 90%;
+    }
+    
+    .logo{
+        display: flex;
+        justify-content: center
+    }
+    
+    .top-title{
+        text-align: center
+    }
+    
+    .remote-control-item, .premium-services-item, .credit-item, .placement-of-funds-item{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .premium{
+        padding: 10px 0 10px 100px
+    }
+    
+    .remote-control-item .premium .premium-line{
+        font-size: 20px
+    }
+    
+    .ttitle-remote, .ttitle-premium-services, .ttitle-placement-of-funds, .ttitle-credit, .ttitle-free-of-charge-service, .ttitle-income-protection{
+        background-position: 10px
+    }
+    
+    .ttitle-remote h2, .ttitle-premium-services h2, .ttitle-placement-of-funds h2, .ttitle-credit h2, .ttitle-free-of-charge-service h2, .ttitle-income-protection h2{
+        font-size: 20px;
+        margin-left: 70px;
+    }
+    
+    .ttitle-remote button, .ttitle-premium-services button, .ttitle-placement-of-funds button, .ttitle-credit button, .ttitle-free-of-charge-service button, .ttitle-income-protection button{
+        right: 10px;
+    }
+    
+    .first, .second, .third, .fourth{
+        max-height: 200px
+    }
+    
+    .first p, .second p, .third p, .fourth p{
+        padding: 20px;
+    }
+    
+    .or{
+        display: none;
+    }
+    
+    .bottom-footer{
+        justify-content: space-around;
+        display: flex;
+    }
+}
+
+@media (max-width:400px){{}
+    .logo img{
+        width: 320px;
+    }
+    
+    .about-us-flex-item a {
+        font-size: 13px
+    }
+    
+    .about-us-flex-item img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .premium{
+        padding: 0;
+        background: none;
+        text-align: center
+    }
+    
+    .remote-control-item .premium .premium-line{
+        font-size: 14px
+    }
+    
+    .credit{
+        position: relative;
+        padding-bottom: 250px;
+    }
+    
+    .credit-item ul{
+        position: absolute;
+        bottom: 0;
+        left: -20%
+    }
+}
