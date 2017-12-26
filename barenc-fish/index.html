@@ -37,7 +37,7 @@
                </a>
            </div>
            
-           <div class="communications col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-0  col-xs-12 col-xs-offset-4">
+           <div class="communications col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1">
                <div class="phone">
                     <p>8 (8152) 47-27-308 <span>с 9 до 22</span></p>
                </div>
@@ -47,7 +47,7 @@
             </button>
             
             
-            <div class="modal fade col-lg-3 col-lg-offset-4 col-xs-6 col-xs-offset-2" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade col-lg-3 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-4 col-xs-10 col-xs-offset-1 " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -56,10 +56,10 @@
                   </div>
                   <div class="modal-body">
                     <form action="" class="back-call">
-                        <input type="text" value="Как Вас зовут?*">
-                        <input type="text" value="Ваша компания">
-                        <input type="text" value="Ваша должность">
-                        <input type="text" value="Ваш телефон*">
+                        <input type="text" value="Как Вас зовут?*" onfocus="if (this.value == 'Как Вас зовут?*') {this.value=''} this.style.color = '#393789'" onBlur="if (this.value == '') {this.value='Как Вас зовут?*'} this.style.color = '#393789';">
+                        <input type="text" value="Ваша компания" onfocus="if (this.value == 'Ваша компания') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Ваша компания'} this.style.color = '#393789';">
+                        <input type="text" value="Ваша должность" onfocus="if (this.value == 'Ваша должность') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Ваша должность'} this.style.color = '#393789';">
+                        <input type="text" value="Ваш телефон*" onfocus="if (this.value == 'Ваш телефон*') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Ваш телефон*'} this.style.color = '#393789';">
                         <button>Перезвоните мне</button>
                     </form>
                   </div>
@@ -72,7 +72,7 @@
             </button>
 
             
-            <div class="modal fade col-lg-3 col-lg-offset-4 col-xs-6 col-xs-offset-2" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade col-lg-3 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-4 col-xs-10 col-xs-offset-1" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -81,10 +81,10 @@
                   </div>
                   <div class="modal-body">
                     <form action="" class="back-call">
-                        <input type="text" value="Как Вас зовут?*">
-                        <input type="text" value="Ваша компания">
-                        <input type="text" value="Ваша должность">
-                        <input type="text" value="Ваш почтовый ящик*">
+                        <input type="text" value="Как Вас зовут?*" onfocus="if (this.value == 'Как Вас зовут?*') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Как Вас зовут?*'} this.style.color = '#393789';">
+                        <input type="text" value="Ваша компания" onfocus="if (this.value == 'Ваша компания') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Ваша компания'} this.style.color = '#393789';">
+                        <input type="text" value="Ваша должность" onfocus="if (this.value == 'Ваша должность') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Ваша должность'} this.style.color = '#393789';">
+                        <input type="text" value="Ваш почтовый ящик*" onfocus="if (this.value == 'Ваш почтовый ящик*') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Ваш почтовый ящик*'} this.style.color = '#393789';">
                         <textarea cols="50" rows="7" wrap="physical"></textarea>
                         
                         <button>отправить</button>
@@ -113,18 +113,14 @@
    
    <div class="row menu">
        <div class="container">
-           <nav class="navbar navbar-default">
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">каталог <span class="sr-only">(current)</span></a></li>
+                  <ul class="navbar-menu">
+                    <li><a href="#">каталог <span class="sr-only">(current)</span></a></li>
                     <li><a href="#">контакты</a></li>
                     <li><a href="#">наша компания</a></li>
                     <li><a href="#">юридическая информация</a></li>
                     <li><a href="#">мой заказ</a></li>
                     <li><a href="#">фотогалерея</a></li>
                   </ul>
-                </div><!-- /.navbar-collapse -->
-            </nav>
        </div>
    </div>
    
@@ -157,7 +153,7 @@
             <div class="tab-content">
           <div class="tab-pane active all-goods" id="all-goods">
               <div class="fillet">
-                 <h4 class="col-lg-12 col-md-12 col-sm-12">филе</h4>
+                 <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">филе</h4>
                   <div class="fillet-item goods-item">
                       <img src="img/goods-img.png" alt="fillet">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
@@ -191,7 +187,7 @@
               </div>
               
               <div class="steak">
-                 <h4 class="col-lg-12 col-md-12 col-sm-12">стейк</h4>
+                 <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">стейк</h4>
                   <div class="steak-item goods-item">
                       <img src="img/goods-img.png" alt="steak">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
@@ -225,7 +221,7 @@
               </div>
               
               <div class="forcemeat">
-                 <h4 class="col-lg-12 col-md-12 col-sm-12">фарш</h4>
+                 <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">фарш</h4>
                   <div class="forcemeat-item goods-item">
                       <img src="img/goods-img.png" alt="forcemeat">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
@@ -262,7 +258,7 @@
           
           <div class="tab-pane" id="fillet">
               <div class="fillet">
-                 <h4 class="col-lg-12 col-md-12 col-sm-12">филе</h4>
+                 <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">филе</h4>
                   <div class="fillet-item goods-item">
                       <img src="img/goods-img.png" alt="fillet">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
@@ -298,7 +294,7 @@
           
           <div class="tab-pane" id="steak">
               <div class="fillet">
-                 <h4 class="col-lg-12 col-md-12 col-sm-12">стейк</h4>
+                 <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">стейк</h4>
                   <div class="fillet-item goods-item">
                       <img src="img/goods-img.png" alt="fillet">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
@@ -334,7 +330,7 @@
           
           <div class="tab-pane" id="forcemeat">
               <div class="forcemeat">
-                 <h4 class="col-lg-12 col-md-12 col-sm-12">фарш</h4>
+                 <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">фарш</h4>
                   <div class="forcemeat-item goods-item">
                       <img src="img/goods-img.png" alt="forcemeat">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
@@ -371,7 +367,7 @@
           
           <div class="tab-pane" id="other">
               <div class="forcemeat">
-                 <h4 class="col-lg-12 col-md-12 col-sm-12">разное</h4>
+                 <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">разное</h4>
                   <div class="forcemeat-item goods-item">
                       <img src="img/goods-img.png" alt="forcemeat">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
@@ -414,22 +410,22 @@
        <div class="container footer-container">
            <footer>
                <div class="footer-top">
-                  <div class="footer-menu col-lg-7 col-md-8 col-sm-12">
+                  <div class="footer-menu col-lg-7 col-md-8 col-sm-12 col-xs-6">
                    <a href="#">О компании</a>
                    <a href="#">Юридическая информация</a>
                    <a href="#">Фотогалерея</a>
                    <span>
-                   <a href="#">Контакты</a>
+                   <a href="#">Контакты</a> <br class="hidden-lg hidden-md hidden-sm">
                    <a href="#">Каталог</a>
                    </span>
                   </div>
                     <div class="our-address pull-right">
-                       <p>г. мурманск ул. Песочная 35</p> 
+                       <p>г. Мурманск ул. Песочная 35</p> 
                        <p class="phone-footer">8 (999) 88 00</p>
                    </div>
                </div>
                
-               <p class="copyright col-lg-12 col-md-12 col-sm-12"><span>1998 - 2018 </span> <span class="underline">"Рыбоперерабатывающая фабрика «Баренцрыба" </span><span>Все права защищенны.</span></p>
+               <p class="copyright col-lg-12 col-md-12 col-sm-12 col-xs-12"><span>1998 - 2018 </span> <span class="underline">Рыбоперерабатывающая фабрика «Баренцрыба» </span><span>Все права защищенны.</span></p>
            </footer>
        </div>
    </div>

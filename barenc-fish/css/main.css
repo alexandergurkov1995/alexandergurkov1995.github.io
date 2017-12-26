@@ -65,6 +65,10 @@ body{
     color: #00131d;
 }
 
+.btn-1:active, .btn-2:active, .btn-1:focus, .btn-2:focus{
+    outline: none!important;
+}
+
 .btn-2{
     margin-left: 40px;
 }
@@ -87,6 +91,7 @@ body{
 .back-call input, #myModal1 input{
     margin-bottom: 15px;
     border: 1px solid #808080;
+    text-transform: capitalize;
     color: #c2c2c2;
     font-size: 14px;
     padding: 6px
@@ -122,44 +127,43 @@ textarea{
     padding: 0;
 }
 
-.navbar{
-    border: none;
-    background: #fff;
-    border: 1px solid #dfdfdf;
-    margin: 0;
-}
-
-.navbar-nav{
+.navbar-menu{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 0;
 }
 
-.navbar-nav>.active>a{
-    background-color:#fff!important;
+.navbar-menu li{
 }
 
-.navbar-nav li{
-    padding: 0 30px 0;
+.navbar-menu li:hover{
+    background: #393789;
+    border-right: 1px solid #fff;
+    color: #fff!important
+}
+
+.navbar-menu li:hover{
+    color: #fff!important
+}
+
+.navbar-menu li a:hover{
+    color: #fff;
+}
+
+.navbar-menu li a{
+    display: block;
+    padding-left: 22px;
+    padding-right: 22px;
+    text-transform: capitalize;
+    color: #00131d;
     border-right: 1px solid #dfdfdf;
+    text-decoration: none;
+    padding:18px 46px;
 }
 
-.navbar-nav li:last-child{
+.navbar-menu li:nth-child(6) a{
     border-right: none;
-}
-
-.navbar-nav {
-    padding: 20px;
-}
-
-.navbar-nav a{
-    font-size: 14px;
-    padding: 0!important;
-    color: #00131d!important;
-    font-weight: bold;
-    text-transform: capitalize
 }
 
 .banner{
@@ -233,7 +237,6 @@ textarea{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    clear: both
 }
 
 .fillet, .steak, .forcemeat, .other{
@@ -241,7 +244,7 @@ textarea{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    clear: both
+    clear: both;
 }
 
 .goods-item{
@@ -257,6 +260,8 @@ textarea{
 
 .goods-item:hover{
     background: none; border: 1px solid #dfdfdf;
+    margin: -1px;
+    margin-bottom: 10px;
 }
 
 .goods-item:hover .hidden-price{
@@ -357,13 +362,10 @@ footer{
 }
 
 @media (min-width: 992px) and (max-width:1200px){
-    .navbar-nav{
-        align-items: center
-    }
     
-    .navbar-nav li{
-        padding: 0;
-        padding-right: 15px;
+    .navbar-menu li a{
+        border-right: none;
+        padding: 9px 29px
     }
     
     .nav-tabs{
@@ -380,16 +382,9 @@ footer{
         padding:0;
     }
     
-    .navbar-nav{
-        align-items: center;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    .navbar-nav li{
-        padding: 0;
-        padding-right: 15px;
-        margin-right: 15px;
+    .navbar-menu li a{
+        border-right: none;
+        padding: 9px 11px
     }
     
     .about-us{
@@ -456,9 +451,89 @@ footer{
     }
 }
 
+@media(max-width:750px){
+    .all-goods, .fillet, .steak, .forcemeat, .other{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+}
+
+@media(max-width:600px){
+    .nav-tabs{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-tabs li{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:400px){
+    .phone p span{
+        display: none
+    }
+    
+    .communications{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .communications .phone p{
+        margin-bottom: 10px;
+    }
+    
+    .btn-2{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+}
+
+@media (max-width:420px){
+    .price{
+        font-size: 20px
+    }
+    
+    .footer-menu{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .footer-container{
+        padding: 0;
+    }
+    
+    .our-address{
+        float: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
 @media (min-width: 320px) and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    
     .top-block{
         padding: 0 30px
+    }
+    
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navbar-menu li{
+        width: 100%;
+        text-align: center
     }
     
     .logo{
@@ -467,12 +542,18 @@ footer{
     }
     
     .logo img{
-        width: 350px;
+        width: 320px;
     }
     
     .communications{
         margin-top: 25px;
         padding: 0;
+        text-align: center
+    }
+    
+    .communications .phone p{
+        display: flex;
+        justify-content: center
     }
     
     .top-block .our-address{
@@ -483,4 +564,74 @@ footer{
     .basket{
         margin-top: 15px;
     }
+    
+    .about-us{
+        flex-direction: column;
+        width: 60%;
+        margin-left: 20%
+    }
+    
+    .goods-item{
+        position: static;
+        margin: 0;
+        width: 90%;
+        margin-bottom: 15px!important;
+    }
+    
+    .goods-item:hover{
+        border: none;
+    }
+    
+    .goods-item img{
+        width: 100%;
+    }
+    
+    .goods-item{
+        background: none;
+        margin-bottom: 20px;
+    }
+    
+    .all-goods, .fillet, .steak, .forcemeat, .other{
+        justify-content:center;
+        align-items:center;
+        align-content: center
+    }
+    .about-us-item{
+        margin-bottom: 10px;
+    }
+    
+    .tab-content h4{
+        text-align: center;
+        margin: 15px;
+    }
+    
+    .nav-tabs{
+        float: none;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .footer-menu{
+        display: flex;
+        padding: 0;
+        flex-direction: column
+    }
+    
+    .footer-menu a{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    .footer-menu span{
+        margin: 0;
+    }
+    
+    .footer-menu a:last-child{
+        margin-left: 0;
+    }
+    
+    
 }
