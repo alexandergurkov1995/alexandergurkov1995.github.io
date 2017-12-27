@@ -63,6 +63,7 @@ body{
     border-radius: 0;
     border-bottom: 1px solid #dfdfdf;
     color: #00131d;
+    padding: 0;
 }
 
 .btn-1:active, .btn-2:active, .btn-1:focus, .btn-2:focus{
@@ -116,11 +117,17 @@ textarea{
 .our-address{
     color: #808080;
     font-size: 12px;
+    text-align: right
 }
 
 .basket{
     color: #808080;
     margin-top: 12px;
+}
+
+.basket:hover{
+    color: #089fb1;
+    transition: .8s
 }
 
 .menu .container{
@@ -129,18 +136,17 @@ textarea{
 
 .navbar-menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border: 1px solid #dfdfdf;
     margin-bottom: 0;
-}
-
-.navbar-menu li{
 }
 
 .navbar-menu li:hover{
     background: #393789;
     border-right: 1px solid #fff;
-    color: #fff!important
+    color: #fff!important;
+    transition: .5s all;
+    cursor: pointer
 }
 
 .navbar-menu li:hover{
@@ -151,15 +157,16 @@ textarea{
     color: #fff;
 }
 
+.navbar-menu li{
+    padding: 18px 35.5px;
+}
+
 .navbar-menu li a{
     display: block;
-    padding-left: 22px;
-    padding-right: 22px;
-    text-transform: capitalize;
     color: #00131d;
+    padding-right: 22px;
     border-right: 1px solid #dfdfdf;
     text-decoration: none;
-    padding:18px 46px;
 }
 
 .navbar-menu li:nth-child(6) a{
@@ -266,7 +273,6 @@ textarea{
 
 .goods-item:hover .hidden-price{
     visibility: hidden;
-    
 }
 
 .goods-item p {
@@ -312,6 +318,11 @@ textarea{
     background: #393789;
     border: none;
     visibility: hidden;
+}
+
+.get-to-basket:hover{
+    background: #089fb1;
+    transition: .5s
 }
 
 footer{

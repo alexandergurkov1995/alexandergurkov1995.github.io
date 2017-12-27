@@ -100,26 +100,35 @@
             
            
            <div class="our-address col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-10">
-               <p>г. мурманск</p>
+               <p>г. Мурманск</p>
                <p>ул. Песочная 35</p>
            </div>
            
-           <div class="basket pull-right">
-              <span class="pieces">00</span>
-               <span class="glyphicon glyphicon-th-list"></span>
-           </div>
+           <a href="basket.html" target="_blank">
+               <div class="basket pull-right">
+                  <span class="pieces">00</span>
+                   <span class="glyphicon glyphicon-th-list"></span>
+               </div>
+           </a>
        </div>
    </div>
+   
+   
+       <a style='position: fixed; bottom: 60px; right: 20px; cursor:pointer; display:none;'
+         href='#' id='Go_Top'>
+         <img src="img/go-top.png" alt="Наверх" title="Наверх">
+         <p style="font-size: 12.5px; color: #089fb1; font-family: Verdana">наверх</p>
+        </a>
    
    <div class="row menu">
        <div class="container">
                   <ul class="navbar-menu">
-                    <li><a href="#">каталог <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">контакты</a></li>
-                    <li><a href="#">наша компания</a></li>
-                    <li><a href="#">юридическая информация</a></li>
-                    <li><a href="#">мой заказ</a></li>
-                    <li><a href="#">фотогалерея</a></li>
+                    <li><a href="#">Каталог <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Наша компания</a></li>
+                    <li><a href="#">Юридическая информация</a></li>
+                    <li><a href="basket.html">Мой заказ</a></li>
+                    <li><a href="#">Фотогалерея</a></li>
                   </ul>
        </div>
    </div>
@@ -425,12 +434,36 @@
                    </div>
                </div>
                
-               <p class="copyright col-lg-12 col-md-12 col-sm-12 col-xs-12"><span>1998 - 2018 </span> <span class="underline">Рыбоперерабатывающая фабрика «Баренцрыба» </span><span>Все права защищенны.</span></p>
+               <p class="copyright col-lg-12 col-md-12 col-sm-12 col-xs-12"><span>1998 - 2018 </span> <a href="index.html" style="color: #00131d"><span class="underline">Рыбоперерабатывающая фабрика «Баренцрыба» </span></a><span>Все права защищенны.</span></p>
            </footer>
        </div>
    </div>
-   
+       
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function(){
+         $("#Go_Top").hide().removeAttr("href");
+         if ($(window).scrollTop()>="250") $("#Go_Top").fadeIn("slow")
+         $(window).scroll(function(){
+          if ($(window).scrollTop()<="250") $("#Go_Top").fadeOut("slow")
+          else $("#Go_Top").fadeIn("slow")
+         });
+
+         $("#Go_Bottom").hide().removeAttr("href");
+         if ($(window).scrollTop()<=$(document).height()-"999") $("#Go_Bottom").fadeIn("slow")
+         $(window).scroll(function(){
+          if ($(window).scrollTop()>=$(document).height()-"999") $("#Go_Bottom").fadeOut("slow")
+          else $("#Go_Bottom").fadeIn("slow")
+         });
+
+         $("#Go_Top").click(function(){
+          $("html, body").animate({scrollTop:0},"slow")
+         })
+         $("#Go_Bottom").click(function(){
+          $("html, body").animate({scrollTop:$(document).height()},"slow")
+         })
+        });
+        </script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
