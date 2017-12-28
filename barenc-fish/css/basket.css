@@ -58,7 +58,7 @@
 }
 
 .order-items-number{
-    padding-right: 15px;
+    width: 25px;
 }
 
 .order-details{
@@ -88,6 +88,10 @@
     margin: 0;
 }
 
+.delete-order-item{
+    margin-right: 60px;
+}
+
 .fa-times{
     color: #dfdfdf;
     text-transform: uppercase;
@@ -99,6 +103,10 @@
     transition: 1s
 }
 
+.order-form{
+    padding-right: 0!important;
+}
+
 .form-title{
     margin-bottom: 25px;
 }
@@ -107,8 +115,23 @@
     margin-bottom: 25px;
     border: 1px solid #dfdfdf;
     padding: 17px 20px;
+    color: #808080
 }
 
 .order-form textarea{
     border: 1px solid #dfdfdf;
+}
+
+textarea{
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #808080!important;
+}
+
+.order-form button{
+    background: #393789;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 18px 32px;
+    width: 145px;
 }
