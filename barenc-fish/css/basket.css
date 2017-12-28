@@ -38,6 +38,10 @@
     font-size: 12px;
 }
 
+.older-page-a:hover{
+     color: #c2c2c2;
+}
+
 .order-items .full-price, .order-items .tare{
     visibility: visible!important;
     position: static
