@@ -1,0 +1,37 @@
+.navbar-menu li:nth-child(3){
+    background: #393789;
+    color: #fff!important;
+}
+
+.navbar-menu li:nth-child(3) a{
+    color: #fff!important;
+    border-right: none;
+}
+
+.older-row{
+    margin: 17px 0 51px
+}
+
+.us-company-row .container{
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+.us-company{
+    padding-left: 0;
+    padding-right: 65px;
+}
+
+.us-company-title{
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+.us-company p{
+    margin-bottom: 0;
+    line-height: 24px;
+}
+
+.us-company-photo{
+    padding-right: 0;
+}

@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мой заказ</title>
-    <link rel="stylesheet" href="css/basket.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="uscompany.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -113,7 +113,7 @@
                   <ul class="navbar-menu">
                     <li><a href="index.html">Каталог <span class="sr-only">(current)</span></a></li>
                     <li><a href="contact.html">Контакты</a></li>
-                    <li><a href="uscompany.html">Наша компания</a></li>
+                    <li><a href="#">Наша компания</a></li>
                     <li><a href="#">Юридическая информация</a></li>
                     <li><a href="basket.html">Мой заказ</a></li>
                     <li><a href="#">Фотогалерея</a></li>
@@ -124,128 +124,45 @@
    <div class="row older-row">
        <div class="container">
            <div class="older">
-               <a class="older-page-a" href="index.html">каталог</a> <img src="img/arrow-right.png" alt="arrow"> <a class="older-page-a" href="basket.html">мой заказ</a>
+               <a class="older-page-a" href="index.html">каталог</a> <img src="img/arrow-right.png" alt="arrow"> <a class="older-page-a" href="basket.html">наша компания</a>
            </div>
        </div>
    </div>
    
-   <div class="row basket-row">
+   <div class="row us-company-row">
        <div class="container">
-          <form action="" class="order-form pull-right col-lg-4">
-             <h3 class="form-title pull-right ">Введите ваши данные</h3>
-              <input type="text" value="Как Вас зовут?*" onfocus="if (this.value == 'Как Вас зовут?*') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Как Вас зовут?*'} this.style.color = '#393789';">
-                        <input type="text" value="телефон" onfocus="if (this.value == 'телефон') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='телефон'} this.style.color = '#393789';">
-                        <input type="text" value="e-mail" onfocus="if (this.value == 'e-mail') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='e-mail'} this.style.color = '#393789';">
-                        <textarea cols="50" rows="7" wrap="physical" onclick="this.value=''" onfocus="if (this.value == 'Примечания к заказу') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Примечания к заказу'} this.style.color = '#393789';"> Примечания к заказу </textarea>
-                        <button>отправить</button>
-          </form>
-          
-          
-           <h3 class="basket-title">Позиции в заказе</h3>
+           <div class="us-company col-lg-8">
+               <h3 class="us-company-title">
+                   Наша компания
+               </h3>
+               <p>
+                   Рыбоперерабатывающий комплекс ООО «БАРЕНЦРЫБА» - крупное предприятие 
+                    в Мурманской области. За 20 лет работы предприятие прочно утвердило свои позиции. 
+                    ООО «БАРЕНЦРЫБА» производит продукцию из морской рыбы, выловленной в холодных 
+                    и чистых водах Баренцева моря. 
+               </p>
+               <p>
+                   Близость районов промысла и быстрая доставка охлажденного сырья гарантирует 
+                    сохранность всех ценных вкусовых качеств и свежесть продукции.
+                    Основной профиль компании - производство проложенного ФИЛЕ - из трески, пикши, 
+                    сайды: СТЕЙКИ – трески, сайды, пикши, зубатки. Камбала, пикша, треска КУСОК – штучной 
+                    заморозки. Фарши.
+               </p>
+               <p>
+                   Вся продукция вырабатывается на высокотехнологичном и импортном оборудовании, 
+                    без консервантов и пищевых добавок. Чистота производства на предприятии, 
+                    тщательный контроль на всех стадиях производственно-технологичного процесса – являются 
+                    неотъемленной частью компании.
+               </p>
+           </div>
            
-           <ul class="order-items col-lg-8">
-               <li>
-                 <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                   <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                   <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                   <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                   <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                   <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-           </ul>
+           <div class="us-company-photo col-lg-4">
+               <img src="img/us-company-photo.jpg" class="pull-right" alt="us-company">
+           </div>
        </div>
    </div>
    
-   
-   <div class="row">
+   <div class="row footer-row">
        <div class="container footer-container">
            <footer>
                <div class="footer-top">

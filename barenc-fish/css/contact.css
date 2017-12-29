@@ -8,6 +8,10 @@
     border-right: none;
 }
 
+.older-row{
+    padding: 17px 0 5px;
+}
+
 .contact-row .container{
     padding:22px 0 22px;
 }
@@ -77,5 +81,11 @@
     margin-bottom: 21px;
 }
 
+.copyright{
+     padding: 0!important;
+}
 
-
+.footer-mail{
+    float: right;
+    color: #00131d!important;
+}

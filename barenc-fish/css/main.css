@@ -195,7 +195,8 @@ textarea{
 .navbar-menu li a{
     display: block;
     color: #00131d;
-    padding-right: 22px;
+    padding-right: 11px;
+    padding-left: 11px;
     border-right: 1px solid #dfdfdf;
     text-decoration: none;
 }
