@@ -16,16 +16,12 @@
     
     <!-- Script for Tabs -->
          <script>
-                $('#myTab a').click(function (e) {
-                  e.preventDefault()
-                  $(this).tab('show')
-                })
              
-                $('#myTab a[href="#all-goods"]').tab('show') // Select tab by name
-                $('#myTab a[href="#fillet"]').tab('show') // Select first tab
-                $('#myTab a[href="#steak"]').tab('show') // Select last tab
+                $('#myTab a[href="#all-goods"]').tab('show') 
+                $('#myTab a[href="#fillet"]').tab('show') 
+                $('#myTab a[href="#steak"]').tab('show') 
                 $('#myTab a[href="#forcemeat"]').tab('show')
-                $('#myTab a[href="#other"]').tab('show') // Select third tab (0-indexed)
+                $('#myTab a[href="#other"]').tab('show') 
          </script>
   </head>
   <body>
@@ -99,7 +95,7 @@
             
             
            
-           <div class="our-address col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-10">
+           <div class="our-address our-address-top col-lg-2  col-md-2  col-sm-2 col-xs-10">
                <p>г. Мурманск</p>
                <p>ул. Песочная 35</p>
            </div>
@@ -123,8 +119,8 @@
    <div class="row menu">
        <div class="container">
                   <ul class="navbar-menu">
-                    <li><a href="#">Каталог <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="index.html">Каталог <span class="sr-only">(current)</span></a></li>
+                    <li><a href="contact.html">Контакты</a></li>
                     <li><a href="#">Наша компания</a></li>
                     <li><a href="#">Юридическая информация</a></li>
                     <li><a href="basket.html">Мой заказ</a></li>
@@ -195,6 +191,14 @@
                   </div>
               </div>
               
+            <ul class="nav nav-tabs nav-tabs-steak">
+              <li ><a href="#all-goods" data-toggle="tab">все товары</a></li>
+              <li><a href="#fillet" data-toggle="tab">филе</a></li>
+              <li class="active"><a href="#steak" data-toggle="tab">стейк</a></li>
+              <li><a href="#forcemeat" data-toggle="tab">фарш</a></li>
+              <li><a href="#other" data-toggle="tab">разное</a></li>
+            </ul>
+              
               <div class="steak">
                  <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">стейк</h4>
                   <div class="steak-item goods-item">
@@ -229,6 +233,14 @@
                   </div>
               </div>
               
+            <ul class="nav nav-tabs nav-forcemeat">
+              <li ><a href="#all-goods" data-toggle="tab">все товары</a></li>
+              <li><a href="#fillet" data-toggle="tab">филе</a></li>
+              <li><a href="#steak" data-toggle="tab">стейк</a></li>
+              <li  class="active"><a href="#forcemeat" data-toggle="tab">фарш</a></li>
+              <li><a href="#other" data-toggle="tab">разное</a></li>
+            </ul>
+              
               <div class="forcemeat">
                  <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">фарш</h4>
                   <div class="forcemeat-item goods-item">
@@ -258,6 +270,49 @@
                   </div>
                   
                   <div class="forcemeat-item goods-item">
+                      <img src="img/goods-img.png" alt="forcemeat">
+                      <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
+                      <button type="submit" class="get-to-basket">Добавить в заявку</button>
+                  </div>
+              </div>
+              
+            <ul class="nav nav-tabs nav-other">
+              <li ><a href="#all-goods" data-toggle="tab">все товары</a></li>
+              <li><a href="#fillet" data-toggle="tab">филе</a></li>
+              <li><a href="#steak" data-toggle="tab">стейк</a></li>
+              <li ><a href="#forcemeat" data-toggle="tab">фарш</a></li>
+              <li  class="active"><a href="#other" data-toggle="tab">разное</a></li>
+            </ul>
+              
+              <div class="other">
+                 <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">разное</h4>
+                  <div class="other-item goods-item">
+                      <img src="img/goods-img.png" alt="forcemeat">
+                      <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
+                      <button type="submit" class="get-to-basket">Добавить в заявку</button>
+                  </div>
+                  <div class="other-item goods-item">
+                     <img src="img/goods-img.png" alt="forcemeat">
+                      <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
+                      <button type="submit" class="get-to-basket">Добавить в заявку</button>
+                  </div>
+                  <div class="other-item goods-item">
+                      <img src="img/goods-img.png" alt="forcemeat">
+                      <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
+                      <button type="submit" class="get-to-basket">Добавить в заявку</button>
+                  </div>
+                  <div class="other-item goods-item">
+                      <img src="img/goods-img.png" alt="forcemeat">
+                      <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
+                      <button type="submit" class="get-to-basket">Добавить в заявку</button>
+                  </div>
+                  <div class="other-item goods-item">
+                      <img src="img/goods-img.png" alt="forcemeat">
+                      <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
+                      <button type="submit" class="get-to-basket">Добавить в заявку</button>
+                  </div>
+                  
+                  <div class="other-item goods-item">
                       <img src="img/goods-img.png" alt="forcemeat">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
@@ -302,34 +357,34 @@
           </div>
           
           <div class="tab-pane" id="steak">
-              <div class="fillet">
+              <div class="steak">
                  <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">стейк</h4>
-                  <div class="fillet-item goods-item">
+                  <div class="steak-item goods-item">
                       <img src="img/goods-img.png" alt="fillet">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
                   </div>
-                  <div class="fillet-item goods-item">
+                  <div class="steak-item goods-item">
                       <img src="img/goods-img.png" alt="fillet">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
                   </div>
-                  <div class="fillet-item goods-item">
+                  <div class="steak-item goods-item">
                       <img src="img/goods-img.png" alt="fillet">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
                   </div>
-                  <div class="fillet-item goods-item">
+                  <div class="steak-item goods-item">
                       <img src="img/goods-img.png" alt="fillet">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
                   </div>
-                  <div class="fillet-item goods-item">
+                  <div class="steak-item goods-item">
                       <img src="img/goods-img.png" alt="fillet">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
                   </div>
-                  <div class="fillet-item goods-item">
+                  <div class="steak-item goods-item">
                       <img src="img/goods-img.png" alt="fillet">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
@@ -375,35 +430,35 @@
           </div>
           
           <div class="tab-pane" id="other">
-              <div class="forcemeat">
+              <div class="other">
                  <h4 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">разное</h4>
-                  <div class="forcemeat-item goods-item">
+                  <div class="other-item goods-item">
                       <img src="img/goods-img.png" alt="forcemeat">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
                   </div>
-                  <div class="forcemeat-item goods-item">
+                  <div class="other-item goods-item">
                      <img src="img/goods-img.png" alt="forcemeat">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
                   </div>
-                  <div class="forcemeat-item goods-item">
+                  <div class="other-item goods-item">
                       <img src="img/goods-img.png" alt="forcemeat">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
                   </div>
-                  <div class="forcemeat-item goods-item">
+                  <div class="other-item goods-item">
                       <img src="img/goods-img.png" alt="forcemeat">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
                   </div>
-                  <div class="forcemeat-item goods-item">
+                  <div class="other-item goods-item">
                       <img src="img/goods-img.png" alt="forcemeat">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>
                   </div>
                   
-                  <div class="forcemeat-item goods-item">
+                  <div class="other-item goods-item">
                       <img src="img/goods-img.png" alt="forcemeat">
                       <p class="type-of-fish">Филе трески без кожи <span class="how">проложенное</span></p> <br> <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p> <p class="tare">тара 20,43 кг</p>
                       <button type="submit" class="get-to-basket">Добавить в заявку</button>

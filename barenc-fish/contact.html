@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мой заказ</title>
-    <link rel="stylesheet" href="css/basket.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -15,6 +15,12 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <!-- Script for Tabs -->
+         <script>
+                $('#myTab a[href="#map"]').tab('show') 
+                $('#myTab a[href="#scheme"]').tab('show') 
+         </script>
   </head>
   <body>
    <div class="row">
@@ -124,126 +130,63 @@
    <div class="row older-row">
        <div class="container">
            <div class="older">
-               <a class="older-page-a" href="index.html">каталог</a> <img src="img/arrow-right.png" alt="arrow"> <a class="older-page-a" href="basket.html">мой заказ</a>
+               <a class="older-page-a" href="index.html">каталог</a> <img src="img/arrow-right.png" alt="arrow"> <a class="older-page-a" href="basket.html">контакты</a>
            </div>
        </div>
    </div>
    
-   <div class="row basket-row">
+   <div class="row contact-row">
        <div class="container">
-          <form action="" class="order-form pull-right col-lg-4">
-             <h3 class="form-title pull-right ">Введите ваши данные</h3>
-              <input type="text" value="Как Вас зовут?*" onfocus="if (this.value == 'Как Вас зовут?*') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Как Вас зовут?*'} this.style.color = '#393789';">
-                        <input type="text" value="телефон" onfocus="if (this.value == 'телефон') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='телефон'} this.style.color = '#393789';">
-                        <input type="text" value="e-mail" onfocus="if (this.value == 'e-mail') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='e-mail'} this.style.color = '#393789';">
-                        <textarea cols="50" rows="7" wrap="physical" onclick="this.value=''" onfocus="if (this.value == 'Примечания к заказу') {this.value=''} this.style.color = '#393789';" onBlur="if (this.value == '') {this.value='Примечания к заказу'} this.style.color = '#393789';"> Примечания к заказу </textarea>
-                        <button>отправить</button>
-          </form>
-          
-          
-           <h3 class="basket-title">Позиции в заказе</h3>
+           <div class="contact col-lg-4">
+               <h3 class="contact-title">
+                   Контакты
+               </h3>
+               
+               <div class="fish-factory">
+                   <p class="title-factory">Рыбоперерабатывающая фабрика</p>
+                   <p>ООО «БАРЕНЦРЫБА»</p>
+                   <p>г. Мурманск, ул. Песочная, дом 35 <br>
+                       тел/факс <span>8 921 28 38 177</span>
+                   </p>
+               </div>
+               
+               <div class="sales-departament">
+                  <p class="title-departament">Отдел продаж</p>
+                  <p class="name-manager">инна кузьмина</p>
+                   <p class="manager-phone"><span class="col-lg-4">телефон </span><span class="col-lg-8">8 921 28 38 177</span></p>
+                   <p class="e-mail-manager"><span class="col-lg-4">e-mail </span><span class="col-lg-8">inna_murmansk@mail.ru</span></p>
+                   <p class="skype-manager"><span class="col-lg-4">skype</span> <span class="col-lg-8">MurmankInna</span></p>
+               </div>
+               
+               <div class="principal">
+                   <p class="title-departament principal-title">Директор компании</p>
+                   <p class="name-manager">ульяна попович</p>
+                   <p class="manager-phone"><span class="col-lg-4">телефон </span><span class="col-lg-8">8 921 28 38 177 <br> 8 911 349 36 61</span></p>
+                   <p class="e-mail-manager"><span class="col-lg-4">e-mail </span><span class="col-lg-8">ulyana-popovich@yandex.ru</span></p>
+                   <p class="skype-manager"><span class="col-lg-4">skype</span> <span class="col-lg-8">ulyana-popovich15</span></p>
+               </div>
+           </div>
            
-           <ul class="order-items col-lg-8">
-               <li>
-                 <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
+           <div class="map-container col-lg-7 col-lg-offset-1">
+               <ul class="nav nav-tabs">
+                  <li class="active"><a href="#map" data-toggle="tab">карта</a></li>
+                  <li><a href="#scheme" data-toggle="tab">схема</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1432.9031980335747!2d33.04814421647859!3d68.95261248598833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x44340fcf2b26f2bd%3A0xf3bc5c9b86100c6c!2z0J_QtdGB0L7Rh9C90LDRjyDRg9C7LiwgMzUsINCc0YPRgNC80LDQvdGB0LosINCc0YPRgNC80LDQvdGB0LrQsNGPINC-0LHQuy4sIDE4MzAxMA!5e0!3m2!1sru!2sru!4v1514526154086" width="100%" height="551" frameborder="0" style="border:0" allowfullscreen class=""></iframe>
+                  </div>
                   
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                   <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                   <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                   <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                   <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                   <span class="order-details">
-                      <p class="order-items-number">1</p>
-                      <span>
-                      <p>Филе трески б/кожи , б/кости, </p>
-                      <p>Loins, фасов</p>
-                      <p class="tare">тара 20,43 кг.</p>
-                      </span>
-                 </span>
-                 
-                  <span class="order-price">
-                     <p  class="price"><span>300,00 <span class="hidden-price">р.</span></span><br> <span class="full-price">р/кг (с НДС, с ППР, на Мурманске)</span></p>
-                  </span> 
-                  
-                  <a href="" class="delete-order-item"><i class="fa fa-times" aria-hidden="true"></i></a>
-               </li>
-           </ul>
+                  <div class="tab-pane" id="scheme">
+                      
+                  </div>
+                </div>
+           </div>
+           
        </div>
    </div>
-   
    
    <div class="row">
        <div class="container footer-container">
@@ -264,7 +207,7 @@
                    </div>
                </div>
                
-               <p class="copyright col-lg-12 col-md-12 col-sm-12 col-xs-12"><span>1998 - 2018 </span> <span class="underline">Рыбоперерабатывающая фабрика «Баренцрыба» </span><span>Все права защищенны.</span></p>
+               <p class="copyright col-lg-12 col-md-12 col-sm-12 col-xs-12"><span>1998 - 2018 </span> <span class="underline">Рыбоперерабатывающая фабрика «Баренцрыба» </span><span>Все права защищенны.</span> <span class="footer-mail">barentsfish@mail.ru</span></p>
            </footer>
        </div>
    </div>

@@ -38,7 +38,6 @@ body{
     font-size: 18px;
     display: flex;
     color: #00131d;
-    margin-bottom: 20px;
 }
 
 .phone p span{
@@ -126,6 +125,21 @@ textarea{
     padding: 7px;
 }
 
+.our-address-top{
+    margin-top: 8px;
+}
+
+.our-address-top p{
+    margin-bottom: 12px;
+    color: #808080;
+    text-align: right;
+    font-size: 12px;
+}
+
+.our-address-top p:last-child{
+    margin-bottom: 0;
+}
+
 .our-address{
     color: #808080;
     font-size: 12px;
@@ -134,7 +148,7 @@ textarea{
 
 .basket{
     color: #808080;
-    margin-top: 12px;
+    margin-top: 25px;
 }
 
 .basket:hover{
@@ -160,16 +174,22 @@ textarea{
     cursor: pointer
 }
 
+
+.navbar-menu li a{
+    text-align: center
+}
+
 .navbar-menu li:hover{
     color: #fff!important
 }
 
 .navbar-menu li:hover a{
     color: #fff;
+    border-right: none;
 }
 
 .navbar-menu li{
-    padding: 18px 35.5px;
+    padding: 18px 35.6px;
 }
 
 .navbar-menu li a{
@@ -182,6 +202,15 @@ textarea{
 
 .navbar-menu li:nth-child(6) a{
     border-right: none;
+}
+
+.older-page-a{
+    color: #c2c2c2;
+    font-size: 12px;
+}
+
+.older-page-a:hover{
+     color: #c2c2c2;
 }
 
 .banner{
@@ -238,8 +267,8 @@ textarea{
 .nav-tabs li a:hover{
      border-radius: 0!important;
     padding: 7px 17px;
-    border: 1px solid #808080;
-    color: #808080;
+    border: 1px solid #089fb1;
+    color: #089fb1;
     background: #fff;
 }
 
@@ -251,19 +280,38 @@ textarea{
     padding: 8px 17px;
 }
 
+.nav-tabs-gray{
+    margin-top: 50px;
+}
+
+.nav-tabs-gray li a:hover{
+    background: none;
+}
+
+.nav-tabs-gray>li.active>a, .nav-tabs-gray>li.active>a, .nav-tabs-gray>li.active>a:focus, .nav-tabs-gray>li.active>a:hover{
+    background: none;
+    color: #808080;
+    border: 1px solid #808080;
+    padding: 7px 17px;
+    cursor: pointer
+}
+
 .all-goods{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.fillet, .steak, .forcemeat, .other{
+.fillet,  .forcemeat, .steak, .other{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     clear: both;
 }
+
+
+
 
 .goods-item{
     padding: 21px;
@@ -338,11 +386,15 @@ textarea{
 
 footer{
     background: #dfdfdf;
-    padding: 20px 20px 23px;
+    padding: 20px 17px 23px;
     display: table;
     width: 100%;
     clear: both;
     content: '';
+}
+
+.footer-container{
+    padding: 0;
 }
 
 .footer-menu a{
@@ -382,6 +434,7 @@ footer{
     border-bottom: 1px solid #c2c2c2;
     margin: 0 10px;
 }
+
 
 @media (min-width: 992px) and (max-width:1200px){
     
