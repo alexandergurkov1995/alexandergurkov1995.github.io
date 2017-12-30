@@ -23,6 +23,15 @@
                 $('#myTab a[href="#forcemeat"]').tab('show')
                 $('#myTab a[href="#other"]').tab('show') 
          </script>
+         
+         <script>
+             
+             $(function(){
+                $('.glyphicon-menu-hamburger').on('click', function(){
+                    $('.navbar-collapse').Toggle();
+                })
+            })
+            </script>
   </head>
   <body>
    <div class="row">
@@ -89,18 +98,15 @@
                 </div>
               </div>
             </div>
-            
            </div>
             
-            
-            
            
-           <div class="our-address our-address-top col-lg-2  col-md-2  col-sm-2 col-xs-10">
-               <p>г. Мурманск</p>
-               <p>ул. Песочная 35</p>
+           <div class="our-address our-address-top col-lg-2  col-md-2  col-sm-2 col-xs-12">
+                   <p>г. Мурманск</p>
+                   <p>ул. Песочная 35</p>
            </div>
            
-           <a href="basket.html" target="_blank">
+           <a href="basket.html" target="_blank" class="hidden-xs">
                <div class="basket pull-right">
                   <span class="pieces">00</span>
                    <span class="glyphicon glyphicon-th-list"></span>
@@ -116,19 +122,30 @@
          <p style="font-size: 12.5px; color: #089fb1; font-family: Verdana">наверх</p>
         </a>
    
-   <div class="row menu">
-       <div class="container">
-                  <ul class="navbar-menu">
-                    <li><a href="index.html">Каталог <span class="sr-only">(current)</span></a></li>
-                    <li><a href="contact.html">Контакты</a></li>
-                    <li><a href="uscompany.html">Наша компания</a></li>
-                    <li><a href="#">Юридическая информация</a></li>
-                    <li><a href="basket.html">Мой заказ</a></li>
-                    <li><a href="#">Фотогалерея</a></li>
-                  </ul>
+       <div class="row navbar-row">
+           <div class="container">
+                <nav class="navbar navbar-default">
+                <i class="glyphicon glyphicon-menu-hamburger hidden-lg hidden-md hidden-sm" aria-hidden="true"></i>
+                   <a href="basket.html" target="_blank" class="hidden-lg hidden-md hidden-sm">
+                   <div class="basket pull-right">
+                      <span class="pieces">00</span>
+                       <span class="glyphicon glyphicon-th-list"></span>
+                   </div>
+                   </a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html">Каталог <span class="sr-only">(current)</span></a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="uscompany.html">Наша компания</a></li>
+                        <li><a href="#">Юридическая информация</a></li>
+                        <li><a href="basket.html">Мой заказ</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                      </ul>
+                    </div>
+                </nav>
+            </div>
        </div>
-   </div>
-   
+       
    <div class="row">
        <div class="container banner">
        </div>
@@ -484,7 +501,7 @@
                    </span>
                   </div>
                     <div class="our-address pull-right">
-                       <p>г. Мурманск ул. Песочная 35</p> 
+                        <p>г. Мурманск ул. Песочная 35</p>
                        <p class="phone-footer">8 (999) 88 00</p>
                    </div>
                </div>

@@ -156,52 +156,49 @@ textarea{
     transition: .8s
 }
 
-.menu .container{
+.navbar {
+    margin-bottom: 0;
+    background: none;
+    border-radius: 0!important
+}
+
+.navbar-row .container{
     padding: 0;
 }
 
-.navbar-menu{
+.collapse{
+    padding: 0;
+}
+
+.navbar-nav li{
+    float: none!important;
+}
+
+.navbar-nav{
     display: flex;
-    justify-content: center;
-    border: 1px solid #dfdfdf;
-    margin-bottom: 0;
+    justify-content: space-between;
 }
 
-.navbar-menu li:hover{
-    background: #393789;
+.navbar-nav li a{
+    color: #00131d!important;
+    margin: 18px 0;
+    padding: 0 46.56px;
+    border-right: 1px solid #dfdfdf; 
+}
+
+.navbar-nav li:nth-child(6) a{
+    border-right: none!important
+}
+
+.navbar-nav li:hover{
+    background: #393789!important;
+    transition: .7s background;
+    cursor: pointer;
+    border-right: 1px solid #fff
+}
+
+.navbar-nav li:hover a{
     color: #fff!important;
-    transition: .5s all;
-    cursor: pointer
-}
-
-
-.navbar-menu li a{
-    text-align: center
-}
-
-.navbar-menu li:hover{
-    color: #fff!important
-}
-
-.navbar-menu li:hover a{
-    color: #fff;
-    border-right: none;
-}
-
-.navbar-menu li{
-    padding: 18px 35.6px;
-}
-
-.navbar-menu li a{
-    display: block;
-    color: #00131d;
-    padding-right: 11px;
-    padding-left: 11px;
-    border-right: 1px solid #dfdfdf;
-    text-decoration: none;
-}
-
-.navbar-menu li:nth-child(6) a{
     border-right: none;
 }
 
@@ -310,9 +307,6 @@ textarea{
     justify-content: space-between;
     clear: both;
 }
-
-
-
 
 .goods-item{
     padding: 21px;
@@ -439,9 +433,12 @@ footer{
 
 @media (min-width: 992px) and (max-width:1200px){
     
-    .navbar-menu li a{
-        border-right: none;
-        padding: 9px 29px
+    .communications{
+        padding:0;
+    }
+    
+    .navbar-nav li a{
+        padding: 0px 29.92px
     }
     
     .nav-tabs{
@@ -458,9 +455,16 @@ footer{
         padding:0;
     }
     
-    .navbar-menu li a{
-        border-right: none;
-        padding: 9px 11px
+    .top-block .our-address{
+        padding: 0;
+    }
+    
+    .navbar-nav {
+        margin-left: 0.5px;
+    }
+    
+    .navbar-nav li a{
+        padding: 0px 11.5px
     }
     
     .about-us{
@@ -492,6 +496,17 @@ footer{
     .tabs-container{
         padding-left: 0;
         padding-right: 0;
+    }
+    
+    .goods-item:hover{
+    }
+    
+    .how, .tare, .full-price, .get-to-basket{
+        visibility: visible;
+    }
+    
+    .hidden-price{
+        display: none;
     }
     
     footer{
@@ -580,6 +595,16 @@ footer{
         width: 100%;
     }
     
+    .type-of-fish{
+        flex-direction: column
+    }
+    
+    .price{
+        font-size: 16px
+    }
+    
+    
+    
     .footer-container{
         padding: 0;
     }
@@ -587,9 +612,15 @@ footer{
     .our-address{
         float: none;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        text-align: center;
         width: 100%;
         margin-top: 15px;
+    }
+    
+    footer .phone-footer{
+        text-align: center
     }
 }
 
@@ -602,14 +633,26 @@ footer{
         padding: 0 30px
     }
     
-    .navbar-menu{
+    .our-address-top p{
+        margin:0 10px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .navbar-nav{
+        padding: 0;
+        margin: 0;
         display: flex;
         flex-direction: column;
     }
     
-    .navbar-menu li{
+    .navbar-nav li{
         width: 100%;
         text-align: center
+    }
+    
+    .navbar-nav li a{
+        border: none;
     }
     
     .logo{
@@ -624,7 +667,8 @@ footer{
     .communications{
         margin-top: 25px;
         padding: 0;
-        text-align: center
+        text-align: center;
+        margin-bottom: 10px;
     }
     
     .communications .phone p{
@@ -632,9 +676,34 @@ footer{
         justify-content: center
     }
     
+    .navbar{
+        padding-top: 10px;
+    }
+    
+    .hamburger-btn{
+        cursor: pointer;
+        z-index: 1;
+        margin-left: 5%;
+    }
+    
+    .basket{
+        margin-right: 5%;
+        margin-top: 5px!important;
+    }
+    
+    .glyphicon-menu-hamburger{
+        font-size: 20px;
+        color: #808080;
+        margin-left: 10%;
+        margin-top: 1px;
+        cursor: pointer
+    }
+    
     .top-block .our-address{
         display: flex;
-        margin-top: 15px;
+        padding-right: 0;
+        justify-content: space-between;
+        margin-bottom: 10px;
     }
     
     .basket{
@@ -658,20 +727,52 @@ footer{
         border: none;
     }
     
+    .how, .tare, .full-price, .get-to-basket{
+        visibility: visible;
+    }
+    
+    .type-of-fish{
+        display: flex;
+    }
+    
+    .price{
+          margin-top: -15px;  
+    }
+    
+    .full-price{
+        margin-top: -5px;
+    }
+    
+    .tare{
+        margin-top: 5px;
+    }
+    
+    .get-to-basket{
+        margin-top: -15px;
+    }
+    
+    .hidden-price{
+        display: none;
+    }
+    
+    .goods-item{
+        margin-bottom: 23px;
+        background: none;
+    }
+    
+    .goods-item:hover{
+        border: none!important;
+        margin: 0;
+    }
+    
     .goods-item img{
         width: 100%;
     }
     
-    .goods-item{
-        background: none;
-        margin-bottom: 20px;
+    .get-to-basket{
+        width: 100%;
     }
     
-    .all-goods, .fillet, .steak, .forcemeat, .other{
-        justify-content:center;
-        align-items:center;
-        align-content: center
-    }
     .about-us-item{
         margin-bottom: 10px;
     }
@@ -688,6 +789,10 @@ footer{
         margin: 20px;
     }
     
+    .footer-container{
+        padding: 10px;
+    }
+    
     .footer-menu{
         display: flex;
         padding: 0;
@@ -700,6 +805,7 @@ footer{
         margin: 0;
     }
     
+   
     
     .footer-menu span{
         margin: 0;
@@ -708,6 +814,5 @@ footer{
     .footer-menu a:last-child{
         margin-left: 0;
     }
-    
-    
 }
+
