@@ -586,6 +586,7 @@ footer{
 }
 
 @media (max-width:420px){
+    
     .price{
         font-size: 20px
     }
@@ -624,7 +625,13 @@ footer{
     }
 }
 
-@media (min-width: 320px) and (max-width:768px){
+@media (max-width:370px){
+    .modal-content{
+        width: 250px!important;
+    }
+}
+
+@media (min-width: 320px) and (max-width:767px){
     body{
         overflow-x: hidden;
     }
@@ -680,7 +687,7 @@ footer{
         padding-top: 10px;
     }
     
-    .hamburger-btn{
+    .button-hidden{
         cursor: pointer;
         z-index: 1;
         margin-left: 5%;
@@ -692,16 +699,21 @@ footer{
     }
     
     .glyphicon-menu-hamburger{
-        font-size: 20px;
+        font-size: 25px;
+        font-weight: bold;
         color: #808080;
         margin-left: 10%;
         margin-top: 1px;
         cursor: pointer
     }
     
+    .glyphicon-menu-hamburger:hover{
+        color: #089fb1;
+        transition: .8s
+    }
+    
     .top-block .our-address{
         display: flex;
-        padding-right: 0;
         justify-content: space-between;
         margin-bottom: 10px;
     }

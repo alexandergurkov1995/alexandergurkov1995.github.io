@@ -1,9 +1,9 @@
-.navbar-menu li:nth-child(2){
+.navbar-nav li:nth-child(2){
     background: #393789;
     color: #fff!important;
 }
 
-.navbar-menu li:nth-child(2) a{
+.navbar-nav li:nth-child(2) a{
     color: #fff!important;
     border-right: none;
 }
@@ -88,4 +88,75 @@
 .footer-mail{
     float: right;
     color: #00131d!important;
+}
+
+#Go_Top{
+    z-index: 1;
+}
+
+@media (min-width:768px) and (max-width:992px){
+    .contact {
+        padding-right: 0!important;
+    }
+}
+
+@media (min-width:320px) and (max-width:768px){
+    .contact-title{
+        width: 100%;
+    }
+    
+    .contact-row .container{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    
+    .map-container .nav-tabs{
+        flex-direction: row;
+        padding-left: 10px;
+    }
+    
+    .nav-tabs>li{
+        margin-right: 10px!important;
+    }
+    
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center
+    }
+    
+    .title-factory, .title-departament{
+        margin-bottom: 5px!important;
+    }
+    
+    .fish-factory .title-factory{
+        font-size: 17px;
+        margin-bottom: 16px;
+    }
+
+    .fish-factory p:nth-child(2){
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .fish-factory p:nth-child(3){
+        margin-bottom: 10px;
+    }
+    
+    .sales-departament{
+        margin-top: 20px;
+    }
+    
+    .manager-phone{
+        display: flex;
+        flex-direction: column
+    }
+    
+    .manager-phone, .e-mail-manager{
+        justify-content: center
+    }
 }

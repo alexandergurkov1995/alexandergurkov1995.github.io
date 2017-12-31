@@ -1,16 +1,14 @@
-
-
 .older-row .container{
     padding-left: 0;
     padding-right: 0;
 }
 
-.navbar-menu li:nth-child(5){
+.navbar-nav li:nth-child(5){
     background: #393789;
     color: #fff!important;
 }
 
-.navbar-menu li:nth-child(5) a{
+.navbar-nav li:nth-child(5) a{
     color: #fff!important;
     border-right: none;
 }
@@ -148,4 +146,32 @@ textarea{
     text-transform: capitalize;
     padding: 18px 32px;
     width: 145px;
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    
+}
+
+@media (min-width:320px) and (max-width:768px){
+    .older{
+        padding-left: 50px;
+    }
+    
+    .basket-title{
+        padding-left: 50px;
+    }
+}
+
+@media (min-width:320px) and (max-width:992px){
+    
+    
+    .order-form{
+        padding-left: 0!important;
+        margin-bottom: 10px;
+    }
+    
+    .basket-row .container{
+        display: flex;
+        flex-direction: column
+    }
 }

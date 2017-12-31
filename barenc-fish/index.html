@@ -24,14 +24,14 @@
                 $('#myTab a[href="#other"]').tab('show') 
          </script>
          
-         <script>
-             
-             $(function(){
-                $('.glyphicon-menu-hamburger').on('click', function(){
-                    $('.navbar-collapse').Toggle();
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <script>
+            $(function(){
+                $('.button-hidden').on('click', function(){
+                    $('.collapse').slideToggle();
                 })
             })
-            </script>
+        </script>
   </head>
   <body>
    <div class="row">
@@ -125,8 +125,12 @@
        <div class="row navbar-row">
            <div class="container">
                 <nav class="navbar navbar-default">
-                <i class="glyphicon glyphicon-menu-hamburger hidden-lg hidden-md hidden-sm" aria-hidden="true"></i>
+                   
+                   <button class="button-hidden hidden-lg hidden-md hidden-sm">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                    </button>
                    <a href="basket.html" target="_blank" class="hidden-lg hidden-md hidden-sm">
+                   
                    <div class="basket pull-right">
                       <span class="pieces">00</span>
                        <span class="glyphicon glyphicon-th-list"></span>
@@ -511,7 +515,8 @@
        </div>
    </div>
        
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+       
+    <script src="js/bootstrap.js"></script>
     <script type="text/javascript">
         jQuery(function(){
          $("#Go_Top").hide().removeAttr("href");
@@ -536,6 +541,5 @@
          })
         });
         </script>
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
