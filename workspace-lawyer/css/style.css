@@ -1,37 +1,37 @@
 /* Шрифты */
 @font-face{
     font-family:open_sans;
-    src: url(/fonts/open_sans.ttf);
+    src: url(../fonts/open_sans.ttf);
 }
 
 @font-face{
     font-family:open_sans_bold;
-    src: url(/fonts/open_sans_bold.ttf);
+    src: url(../fonts/open_sans_bold.ttf);
 }
 
 @font-face{
     font-family:open_sans_sb_it;
-    src: url(/fonts/open_sans_sb_it.ttf);
+    src: url(../fonts/open_sans_sb_it.ttf);
 }
 
 @font-face{
     font-family:cormorant-bold;
-    src: url(/fonts/cormorant-bold.otf);
+    src: url(../fonts/cormorant-bold.otf);
 }
 
 @font-face{
     font-family:cormorant-regular;
-    src: url(/fonts/cormorant-regular.otf);
+    src: url(../fonts/cormorant-regular.otf);
 }
 
 @font-face{
     font-family:cormorant-semibold;
-    src: url(/fonts/cormorant-semibold.otf);
+    src: url(../fonts/cormorant-semibold.otf);
 }
 
 @font-face{
     font-family:abhayalibre-extrb;
-    src: url(/fonts/abhayalibre-extrb.ttf);
+    src: url(../fonts/abhayalibre-extrb.ttf);
 }
 /* Шрифты */
 
