@@ -85,6 +85,7 @@
      padding: 0!important;
 }
 
+
 .footer-mail{
     float: right;
     color: #00131d!important;
@@ -103,6 +104,10 @@
 @media (min-width:320px) and (max-width:768px){
     .contact-title{
         width: 100%;
+    }
+    
+    .older{
+        padding-left: 20px;
     }
     
     .contact-row .container{

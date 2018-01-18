@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
 }
 
 ul, li{
@@ -64,7 +65,7 @@ body{
 }
 
 .modal-content{
-    width: 300px!important;
+    width: 300px;
     border-radius: 0!important
 }
 
@@ -233,12 +234,220 @@ textarea{
     margin-left: 20px;
 }
 
+.tabs-container{
+    padding: 0;
+}
+
 .tab-content h4{
     padding-left: 0;
     font-size: 22px; text-transform: capitalize;
     color: #393789;
     margin-bottom: 45px;
     margin-left: -15px;
+}
+
+
+.main-nav-tabs{
+    float: left!important;
+    margin-right: 0!important;
+}
+
+.tab-pane-list{
+    padding-bottom: 60px;
+}
+
+.main-tab-li a {
+    border: none!important;
+    background: none!important;
+    color: #808080!important;
+    padding: 0 !important;
+    font-size: 25px;
+}
+
+.main-tab-li.active a{
+    color: #089fb1!important;
+}
+
+.nav-stacked-title{
+    margin-top: 19px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #393789;
+}
+
+.nav-stacked li{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2px;
+    position: relative
+}
+
+.nav-stacked li.dark{
+    background: #e1e1e1;
+}
+
+.nav-stacked li.dark a:hover{
+    background: #fff;
+}
+
+.nav-stacked li.light{
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.nav-stacked li.light a:hover{
+    background: #fff;
+}
+
+.nav-stacked li a{
+    padding: 7px 14px;
+    border: 1px solid #089fb1;
+    border-radius: 0;
+    color: #089fb1;
+    background: #fff;
+    margin-top: 1px;
+}
+
+.nav-stacked li p{
+    font-size: 17px;
+    color: #00131d;
+}
+
+.nav-stacked-fillet li:last-child{
+    padding-right: 15px;
+}
+
+.item-number{
+    width: 25px;
+    text-align: right;
+    position:absolute;
+    left: 10%
+}
+
+.item-name{
+    position:absolute;
+    left: 14%
+}
+
+.item-price{
+    position:absolute;left: 52.5%
+}
+
+.item-weight{
+    position:absolute;
+    right: 11%
+}
+
+
+
+.nav-stacked-steak .item-number{
+    
+}
+
+.nav-stacked-steak .item-name{
+    
+    
+}
+
+.nav-stacked-steak .item-price{
+    
+}
+
+.nav-stacked-steak .item-weight{
+}
+
+.modal-list{
+    padding: 0!important;
+    position: fixed;
+    top: 0%;
+}
+
+.modal-list .modal-content{
+    width: 750px;
+}
+
+.modal-body .goods-item .how, .modal-body .goods-item .tare, .modal-body .goods-item .hidden-price, .modal-body .goods-item .get-to-basket, .modal-body .goods-item .full-price{
+    visibility: visible!important;
+}
+
+.modal-body .type-of-fish {
+    font-size: 29px
+}
+
+.modal-body .type-of-fish .how{
+    font-size: 23px;
+}
+
+.modal-body .price {
+    font-size: 50px;
+}
+
+.modal-body .full-price{
+    font-size: 20px;
+}
+
+.modal-body .tare{
+    font-size: 35px;
+}
+
+.modal-body .get-to-basket{
+    font-size: 29px;
+}
+
+.modal-body .goods-item{
+    background: none!important;
+    margin-bottom: 0;
+}
+
+.modal-body .goods-item:hover{
+    border: none;
+    margin: 0!important;
+}
+
+.modal-body .carousel-indicators{
+    display: none;
+}
+
+.modal-body .carousel-control.left{
+    background: none;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 1%;
+    color: #089fb1;
+    border: none;
+}
+
+.modal-body .carousel-control.right{
+    background: none;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 1%;
+    color: #089fb1;
+    border: none;
+}
+
+.fillet-list-title{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center
+}
+
+.fillet-list-title p{
+    font-size: 22px;
+    color: #393789;
+}
+
+.fillet-list-title p span{
+    font-size: 10px;
+    color: #808080;
+    display: block;
+}
+
+.fillet-list-title .tare, .fillet-list-title .full-price{
+    visibility: visible
 }
 
 .nav-tabs{
