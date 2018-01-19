@@ -83,7 +83,7 @@ body{
 }
 
 .btn-2{
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .modal-header{
@@ -182,8 +182,7 @@ textarea{
 
 .navbar-nav li a{
     color: #00131d!important;
-    margin: 18px 0;
-    padding: 0 46.56px;
+    padding: 18px 46.56px;
     border-right: 1px solid #dfdfdf; 
 }
 
@@ -213,9 +212,9 @@ textarea{
 }
 
 .banner{
-    background: url(../img/banner.jpg) no-repeat 0 0;
+    background: url(../img/banner.jpg) no-repeat 0 37%;
     background-size: cover;
-    height: 450px;
+    height: 160px;
     padding-left: 0;
     padding-right: 0;
 }
@@ -246,6 +245,9 @@ textarea{
     margin-left: -15px;
 }
 
+.tab-pane-list-container{
+    padding-top: 20px;
+}
 
 .main-nav-tabs{
     float: left!important;
@@ -287,7 +289,8 @@ textarea{
 }
 
 .nav-stacked li.dark a:hover{
-    background: #fff;
+    background: #089fb1;
+    color: #fff;
 }
 
 .nav-stacked li.light{
@@ -296,7 +299,8 @@ textarea{
 }
 
 .nav-stacked li.light a:hover{
-    background: #fff;
+    background: #089fb1;
+    color: #fff;
 }
 
 .nav-stacked li a{
@@ -311,6 +315,7 @@ textarea{
 .nav-stacked li p{
     font-size: 17px;
     color: #00131d;
+    padding-top: 5px;
 }
 
 .nav-stacked-fillet li:last-child{
@@ -335,25 +340,17 @@ textarea{
 
 .item-weight{
     position:absolute;
-    right: 11%
+    right: 20.5%
 }
 
-
-
-.nav-stacked-steak .item-number{
-    
-}
-
-.nav-stacked-steak .item-name{
-    
-    
-}
-
-.nav-stacked-steak .item-price{
-    
-}
-
-.nav-stacked-steak .item-weight{
+.item-get-to-basket{
+    position: absolute;
+    right: 0;
+    background: #089fb1;
+    color: #fff;
+    height: 100%;
+    font-size: 17px;
+    padding: 0 15px;
 }
 
 .modal-list{
@@ -430,14 +427,26 @@ textarea{
 
 .fillet-list-title{
     margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center
+    position: relative!important;
+    text-align: center;
 }
 
 .fillet-list-title p{
     font-size: 22px;
+    position: absolute;
     color: #393789;
+}
+
+.fillet-list-title p:nth-child(1){
+    left: 10.5%
+}
+
+.fillet-list-title p:nth-child(2){
+    left: 47.5%
+}
+
+.fillet-list-title p:nth-child(3){
+    right: 20.5%
 }
 
 .fillet-list-title p span{

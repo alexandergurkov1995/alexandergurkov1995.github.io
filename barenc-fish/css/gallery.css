@@ -1,0 +1,7 @@
+.navbar-nav li:nth-child(6){
+    background: #393789;
+}
+
+.navbar-nav li:nth-child(6) a{
+    color: #fff!important;
+}
