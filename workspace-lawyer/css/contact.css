@@ -1,0 +1,144 @@
+.maps-container, .contact-container{
+    padding: 0;
+}
+
+.contact-container{
+    padding-top: 86px;
+    padding-bottom: 86px;
+    display: flex;
+    justify-content: space-between
+}
+
+.contact-form{
+    width: 780px;
+}
+
+.contact-form input, .contact-form textarea{
+    border: 1px solid #e6e6e6;
+    font-family:open_sans;
+    color: #b9b9b9;
+    padding: 20px 0 20px 44px;
+    margin-bottom: 30px;
+}
+
+.contact-form textarea{
+    padding: 20px 0 0 44px;
+}
+
+.contact-form-name{
+    background: url(../img/contact-form-name.png) no-repeat 23px 22px;
+    margin-right: 30px;
+    width: 373px;
+}
+
+.contact-form-mail{
+    background: url(../img/contact-form-mail.png) no-repeat 23px 24px;
+    width: 373px;
+}
+
+.contact-form-subject{
+    background: url(../img/contact-form-subject.png) no-repeat 23px 25px;
+    width: 100%;
+}
+
+.contact-form-message{
+    background: url(../img/contact-form-message.png) no-repeat 23px 23px;
+    width: 100%;
+}
+
+.contact-item{
+    display: flex;
+}
+
+.contact-item i{
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    background: #233d61;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.contact-item-content{
+    margin-left: 15px;
+}
+
+.contact-item-title{
+    font-size: 18px;
+    font-family:cormorant-bold;
+    color: #233d61;
+    margin-top: 0;   
+    margin-bottom: 5px;
+}
+
+.contact-item-content p{
+    margin-bottom: 42px;
+    font-size: 13px;
+    font-family:open_sans;
+    color: #9b9b9b;
+}
+
+.submit-btn{
+    border: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'open_sans_bold';
+    color: #fff;
+    background: #233d61;
+    padding: 17px 60px;
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .row{
+        margin: 0!important;
+    }
+    
+    .contact-form{
+        width: 705px;
+    }
+    
+    .contact-form-name{
+        margin-right: 20px;
+    }
+    
+    .contact-form input, .contact-form textarea{
+        margin-bottom: 20px;
+    }
+    
+    .contact-form-name, .contact-form-mail{
+        width: 340px;
+    }
+    
+    .contact{
+        margin-left: 20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+    .row{
+        margin: 0!important;
+    }
+    
+    .contact-form{
+        width: 600px;
+    }
+    
+    .contact-form-name{
+        margin-right: 20px;
+    }
+    
+    .contact-form input, .contact-form textarea{
+        margin-bottom: 20px;
+    }
+    
+    .contact-form-name, .contact-form-mail{
+        width: 250px;
+    }
+    
+    .contact{
+        margin-left: 20px;
+    }
+}
