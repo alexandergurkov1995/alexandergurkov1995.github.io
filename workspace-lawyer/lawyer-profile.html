@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Контакты</title>
+    <title>Профиль адвоката</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/lawyer-profile.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/font-awesome.min.css">
   </head>
@@ -31,49 +31,58 @@
           </div>
         </nav>
         
-        <div class="container-fluid maps-container">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a51eed40c42c0f00dd70038771cd2bc265f8ceec991a8148c43d2fd405e24ef&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe>        
-        </div>
-        
-        <div class="row form-row">
-            <div class="container contact-container">
-                <form action="" class="contact-form ">
-                    <input class="contact-form-name " type="text" value="Имя" name="username"
-                       onfocus="if (this.value == 'Имя') {this.value=''}" onBlur="if (this.value == '') {this.value='Имя'}">
-                    <input class="contact-form-mail" type="text" value="Эл.почта" name="username"
-                       onfocus="if (this.value == 'Эл.почта') {this.value=''}" onBlur="if (this.value == '') {this.value='Эл.почта'}">
-                    <input class="contact-form-subject " type="text" value="Предмет сообщения" name="username"
-                       onfocus="if (this.value == 'Предмет сообщения') {this.value=''}" onBlur="if (this.value == '') {this.value='Предмет сообщения'}">
-                    <textarea class="contact-form-message " name="" id="" cols="30" rows="10" placeholder="Сообщение" onfocus="placeholder='';" onblur="placeholder='Сообщение';"></textarea>
-                    <button type="submit" class="submit-btn">
-                        Отправить
-                    </button>
-                </form>
-                <div class="contact">
-                    <div class="contact-item">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <div class="contact-item-content">
-                            <h4 class="contact-item-title">Наш адрес</h4>
-                            <p>Город Москва, Холодильный<br>пер. д.3к1 стр.2 Этаж 1-ый, <br>офис2103</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <div class="contact-item-content">
-                            <h4 class="contact-item-title">Телефон</h4>
-                            <p>+7 (495) 955-26-19</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <div class="contact-item-content">
-                            <h4 class="contact-item-title">Эл.почта</h4>
-                            <p>info@uk-result.ru</p>
-                        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <div class="lawyer-banner">
+                    <h2>ларичева екатерина андреевна</h2>
+                    <div class="page-links">
+                        <a href="index.html" class="page-link-item">Главная</a>
+                        <a href="" class="page-link-item">Наши юристы</a>
+                        <a href="lawyer-profile.html" class="page-link-item">Профиль адвоката</a>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <div class="row">
+            <div class="container-fluid">
+                <div class="lawyer-block">
+                    <div class="lawyer-photo"></div>
+                    <div class="lawyer-title">
+                        <p>
+                           ларичева екатерина
+                            <span class="specialization"></span>
+                        </p>
+                    </div>
+                    <div class="about-lawyer">
+                        <p>Родилась в г. Москве. Окончила школу № 3 г. Москвы. После окончания школы обучалась в Московском колледже управления и права с 2000 г. по 2004 г. В 2009 году Екатерина Андреевна Ларичева окончила Московскую финансово-юридическую академию с присвоением квалификации юрист по специальности «Юриспруденция».</p>
+                        <p>C 2005 по 2007 годы, работала в органах внутренних дел, где занималась информационно-аналитической работой. C 2007 2009 годы, работала в Московской городской нотариальной палате г. Москвы, в должности специалиста.</p>
+                        <p>С 2009-2012 годы, работала в Государственной регистрационной палате при Министерстве Юстиции Российской Федерации, в отделе Департамента аккредитации и виз. C 2013 года является членом Адвокатской палаты города Москвы.</p>
+                        <div class="about-lawyer-contact">
+                            <p></p>
+                            <p></p>
+                            <button class="entry">записатьсяна прием</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="us-lawyer-smal">
+                    <div class="us-lawyer-small-item">
+                        <div class="avatar"></div>
+                        <p class="us-lawyer-name"><span></span></p>
+                    </div>
+                    <div class="us-lawyer-small-item">
+                        <div class="avatar"></div>
+                        <p class="us-lawyer-name"><span></span></p>
+                    </div>
+                    <div class="us-lawyer-small-item">
+                        <div class="avatar"></div>
+                        <p class="us-lawyer-name"><span></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
         
          <footer>
             <div class="row">
