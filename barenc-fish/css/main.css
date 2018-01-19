@@ -648,9 +648,7 @@ footer{
     margin: 0 10px;
 }
 
-
-@media (min-width: 992px) and (max-width:1200px){
-    
+@media screen and  (min-width: 992px) and (max-width:1200px){
     .communications{
         padding:0;
     }
@@ -664,7 +662,7 @@ footer{
     }
 }
 
-@media (min-width: 768px) and (max-width:992px){
+@media screen and  (min-width: 768px) and (max-width:992px){
     .logo  img{
         width: 210px;
     }
@@ -716,9 +714,6 @@ footer{
         padding-right: 0;
     }
     
-    .goods-item:hover{
-    }
-    
     .how, .tare, .full-price, .get-to-basket{
         visibility: visible;
     }
@@ -760,7 +755,7 @@ footer{
     }
 }
 
-@media(max-width:750px){
+@media screen and (max-width:750px){
     .all-goods, .fillet, .steak, .forcemeat, .other{
         flex-direction: column;
         justify-content: center;
@@ -768,7 +763,7 @@ footer{
     }
 }
 
-@media(max-width:600px){
+@media screen and (max-width:600px){
     .nav-tabs{
         flex-direction: column;
         text-align: center;
@@ -780,7 +775,7 @@ footer{
     }
 }
 
-@media (max-width:400px){
+@media screen and  (max-width:400px){
     .phone p span{
         display: none
     }
@@ -800,11 +795,9 @@ footer{
         margin-left: 0;
         margin-top: 10px;
     }
-    
 }
 
-@media (max-width:420px){
-    
+@media screen and  (max-width:420px){
     .price{
         font-size: 20px
     }
@@ -821,8 +814,6 @@ footer{
     .price{
         font-size: 16px
     }
-    
-    
     
     .footer-container{
         padding: 0;
@@ -843,13 +834,13 @@ footer{
     }
 }
 
-@media (max-width:370px){
+@media screen and  (max-width:370px){
     .modal-content{
         width: 250px!important;
     }
 }
 
-@media (min-width: 320px) and (max-width:767px){
+@media screen and  (min-width: 320px) and (max-width:767px){
     body{
         overflow-x: hidden;
     }
@@ -1034,9 +1025,7 @@ footer{
         padding: 0;
         margin: 0;
     }
-    
    
-    
     .footer-menu span{
         margin: 0;
     }

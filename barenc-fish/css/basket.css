@@ -148,10 +148,6 @@ textarea{
     width: 145px;
 }
 
-@media (min-width:992px) and (max-width:1200px){
-    
-}
-
 @media (min-width:320px) and (max-width:768px){
     .older{
         padding-left: 50px;
@@ -162,9 +158,7 @@ textarea{
     }
 }
 
-@media (min-width:320px) and (max-width:992px){
-    
-    
+@media screen and  (min-width:320px) and (max-width:992px){
     .order-form{
         padding-left: 0!important;
         margin-bottom: 10px;

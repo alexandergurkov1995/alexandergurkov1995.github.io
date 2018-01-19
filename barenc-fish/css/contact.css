@@ -85,7 +85,6 @@
      padding: 0!important;
 }
 
-
 .footer-mail{
     float: right;
     color: #00131d!important;
@@ -95,13 +94,13 @@
     z-index: 1;
 }
 
-@media (min-width:768px) and (max-width:992px){
+@media screen and  (min-width:768px) and (max-width:992px){
     .contact {
         padding-right: 0!important;
     }
 }
 
-@media (min-width:320px) and (max-width:768px){
+@media screen and  (min-width:320px) and (max-width:768px){
     .contact-title{
         width: 100%;
     }
