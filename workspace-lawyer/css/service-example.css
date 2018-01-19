@@ -1,0 +1,119 @@
+.credit-banner.service-banner{
+    background: url(../img/bg-lawyer-banner.jpg) no-repeat 0 0;
+    background-size: cover;
+    padding: 210px 0 153px;
+    text-align: center;
+}
+
+.credit-banner h2{
+    margin: 0 0 80px;
+    text-transform: capitalize;
+    color: #fff;
+    font-family:cormorant-semibold;
+    font-size: 60px;
+}
+
+.page-links a{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'open_sans';
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+}
+
+.page-links a:last-child{
+    border-right: none;
+}
+
+.service-main-container{
+    padding: 73px 118px 0px 215px;
+}
+
+.service-content{
+    padding-left: 0;
+}
+
+.service-photo img{
+    width: 100%;
+}
+
+.service-title{
+    font-family:cormorant-bold;
+    color: #222;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.service-content p{
+    font-family: 'open_sans';
+    color: #9b9b9b;
+    margin-bottom: 24px;
+}
+
+.service-specialist-title, .form-row-title{
+    margin-top: 65px;
+    margin-bottom: 30px;
+    font-family:cormorant-bold;
+    color: #222;
+}
+
+.service-specialist{
+    justify-content: flex-start;
+}
+
+.service-specialist-item{
+    margin-right: 30px;
+}
+
+.all-services{
+    padding-right: 0;
+}
+
+.all-services-title{
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    color: #cebf8a;
+    margin-top: 0;
+    border-bottom: 3px solid #cebf8a;
+}
+
+.all-services-container{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-services a{
+    color: #222;
+    font-size: 22px;
+    font-family:cormorant-bold;
+    margin-bottom: 15px;
+}
+
+.before-a{
+    left: -28px;
+}
+
+.form-row{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.form-row form{
+    padding-left: 0;
+}
+
+.contact-form-name, .contact-form-mail{
+    width: 49%;
+    margin-right: 0;
+}
+
+.contact-form-subject,
+.contact-form-message{
+    width: 98.5%;
+}
+
+.contact-container{
+    display: block;
+    padding-top: 0;
+}
