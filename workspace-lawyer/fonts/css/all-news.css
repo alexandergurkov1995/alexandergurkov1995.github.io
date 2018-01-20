@@ -1,0 +1,127 @@
+.all-news-main-container{
+    padding: 73px 118px 20px 215px;
+}
+
+.all-news-banner{
+    background: url(../img/bg-lawyer-banner.jpg) no-repeat 0 0;
+    background-size: cover;
+    padding: 210px 0 153px;
+    text-align: center;
+}
+
+.all-news-banner h2{
+    margin: 0 0 80px;
+    color: #fff;
+    font-family:cormorant-semibold;
+    font-size: 60px;
+}
+
+.page-links a{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'open_sans';
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+}
+
+.page-links a:last-child{
+    border-right: none;
+}
+
+.news-container{
+    padding-left: 0;
+}
+
+.news-photo{
+    position: relative;
+    background: #626262;
+    height: 500px;
+}
+
+.news-text-title{
+    margin: 30px 0;
+    color: #222;
+    font-family:cormorant-bold;
+}
+
+.news-text p:not(.news-quote){
+    font-family: 'open_sans';
+    color: #9b9b9b;
+    margin-bottom: 24px;
+}
+
+.news-quote{
+    border-left: 3px solid #cebf8a;
+    padding: 18px 12px;
+    background: #f9f9f9;
+    font-size: 18px;
+    font-family:open_sans_sb_it;
+    margin-bottom: 24px;
+}
+
+.another-news-item{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.news-avatar{
+    background: #626262;
+    width: 61px!important;
+    height: 61px;
+    padding: 0;
+}
+
+.another-news-title{
+    color: #cebf8a;
+    margin-top: 0;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #cebf8a;
+    padding-left: 0;
+    font-family:cormorant-bold;
+}
+
+.another-news-item{
+    padding-left: 0;
+}
+
+.another-news-name{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family:cormorant-bold;
+    color: #222;
+    padding-right: 0;
+}
+
+.another-news-name span{
+    font-size: 12px;
+    color: #bbb;
+    font-family: 'open_sans';
+}
+
+.all-news-and-articles{
+    padding-left: 0;
+    margin-top: -10px;
+    color: #233d61;
+    font-family: 'open_sans_bold';
+}
+
+@media screen and (min-width:320px) and (max-width:1200px) {
+    .all-news-main-container{
+    padding: 73px 20px 20px;
+}
+}
+
+@media screen and (min-width:320px) and (max-width:768px){
+    .all-news-banner{
+        padding: 50px 20px!important;
+    }
+    
+    .all-news-banner h2{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+}
