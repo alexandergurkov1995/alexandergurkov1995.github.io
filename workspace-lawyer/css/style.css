@@ -48,13 +48,6 @@ ul, ol, li{
     list-style: none;
 }
 
-.star-rating {
-  line-height:32px;
-  font-size:1.25em;
-}
-
-.star-rating .fa-star{color: yellow;}
-
 body{
     overflow-x: hidden;
 }
@@ -1101,6 +1094,18 @@ footer form button{
         color: #808080;
         width: 80px;
         cursor: pointer;
+    }
+    
+    .hamburger-a{
+        color: #808080;
+        background: none;
+        border: none;
+        outline: none;
+    }
+    
+    .hamburger-a:hover{
+        color: #222222;
+        transition: .3s;
     }
     
     .navbar{
