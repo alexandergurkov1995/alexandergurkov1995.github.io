@@ -1097,14 +1097,14 @@ footer form button{
     }
     
     .hamburger-a{
-        color: #808080;
+        color: #808080!important;
         background: none;
         border: none;
         outline: none;
     }
     
     .hamburger-a:hover{
-        color: #222222;
+        color: #222222!important;
         transition: .3s;
     }
     
