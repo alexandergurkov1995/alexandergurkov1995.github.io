@@ -1,0 +1,166 @@
+.navbar-nav li:nth-child(2){
+    background: #393789;
+    color: #fff!important;
+}
+
+.navbar-nav li:nth-child(2) a{
+    color: #fff!important;
+    border-right: none;
+}
+
+.older-row{
+    padding: 17px 0 5px;
+}
+
+.contact-row .container{
+    padding:22px 0 22px;
+}
+
+.contact{
+    padding-left: 0!important;
+}
+
+.map-container{
+    padding-right: 0!important;
+}
+
+.contact-title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 8px;
+}
+
+.sales-departament, .principial{
+    display: table;
+}
+
+.fish-factory .title-factory{
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+.fish-factory p:nth-child(2){
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.fish-factory p:nth-child(3){
+    margin-bottom: 30px;
+}
+
+.title-departament{
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+.name-manager{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.principal-title{
+    margin-top: 30px;
+}
+
+.manager-phone, .e-mail-manager{
+    margin-bottom: 10px;
+    display: flex
+}
+
+
+.principal p span, .sales-departament p span{
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.map-container .nav-tabs{
+    position: static;
+    margin-right: 0;
+    float: left;
+    margin-bottom: 21px;
+}
+
+.copyright{
+     padding: 0!important;
+}
+
+.footer-mail{
+    float: right;
+    color: #00131d!important;
+}
+
+#Go_Top{
+    z-index: 1;
+}
+
+@media screen and  (min-width:768px) and (max-width:992px){
+    .contact {
+        padding-right: 0!important;
+    }
+}
+
+@media screen and  (min-width:320px) and (max-width:768px){
+    .contact-title{
+        width: 100%;
+    }
+    
+    .older{
+        padding-left: 20px;
+    }
+    
+    .contact-row .container{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    
+    .map-container .nav-tabs{
+        flex-direction: row;
+        padding-left: 10px;
+    }
+    
+    .nav-tabs>li{
+        margin-right: 10px!important;
+    }
+    
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center
+    }
+    
+    .title-factory, .title-departament{
+        margin-bottom: 5px!important;
+    }
+    
+    .fish-factory .title-factory{
+        font-size: 17px;
+        margin-bottom: 16px;
+    }
+
+    .fish-factory p:nth-child(2){
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .fish-factory p:nth-child(3){
+        margin-bottom: 10px;
+    }
+    
+    .sales-departament{
+        margin-top: 20px;
+    }
+    
+    .manager-phone{
+        display: flex;
+        flex-direction: column
+    }
+    
+    .manager-phone, .e-mail-manager{
+        justify-content: center
+    }
+}
