@@ -1048,6 +1048,10 @@ footer{
 }
 
 @media screen and  (max-width:350px){
+    
+}
+
+@media screen and  (max-width:350px){
     .modal-body .price{
         font-size: 15px!important;
         padding-top: 10px;`
