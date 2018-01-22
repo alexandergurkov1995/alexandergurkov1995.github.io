@@ -30,6 +30,10 @@ body{
     color: #00131d;
 }
 
+.row{
+    margin-right: 0;
+}
+
 .top-block{
     padding: 28px 15px 20px;
 }
@@ -608,6 +612,8 @@ footer{
 
 .footer-container{
     padding: 0;
+    padding-right: 0!important;
+    padding-bottom: 0!important;
 }
 
 .footer-menu a{
@@ -648,6 +654,87 @@ footer{
     margin: 0 10px;
 }
 
+#Go_Top{
+    z-index: 999;
+}
+
+@media screen and  (max-width: 1000px){
+    .nav-stacked li a{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    .item-name{
+        font-size: 14px!important
+    }
+    
+    .fillet-list-title p:nth-child(1){
+        left: 14%
+    }
+    
+    .fillet-list-title p:nth-child(3){
+        display: none;
+    }
+    
+    .item-weight{
+        display: none;
+    }
+    
+    .item-get-to-basket{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    
+    .fillet-list-title p:nth-child(2){
+        left: 56%
+    }
+    
+    .item-price{
+        left: 64%
+    }
+    
+    .modal-list{
+        top: 0%;
+        right: 15%
+    }
+
+    .modal-list .modal-content{
+        width: 100%!important;
+    }
+    
+    .modal-list .goods-item:hover{
+        margin-bottom: 5px!important;
+    }
+    
+    .modal-list .goods-item img{
+        width: 100%!important;
+    }
+    
+    .modal-list .type-of-fish{
+        font-size: 25px!important;
+    }
+    
+    .modal-list .price {
+        margin-top: -25px!important;
+    }
+    
+    .modal-list .price {
+        font-size: 30px!important
+    }
+    
+    .modal-list .full-price{
+        font-size: 16px
+    }
+    
+    .modal-list .tare{
+        margin-top: 0;
+        font-size: 30px
+    }
+    
+    .modal-body .type-of-fish .how{
+        display: none;
+    }
+}
 @media screen and  (min-width: 992px) and (max-width:1200px){
     .communications{
         padding:0;
@@ -659,6 +746,52 @@ footer{
     
     .nav-tabs{
         margin-right: 5%;
+    }
+}
+
+@media screen and  (max-width: 768px){
+    .tabs-container{
+        padding:0 20px;
+    }
+    
+    .modal-list .goods-item{
+        width: 100%;
+    }
+    
+    .modal-list{
+        right: 5%
+    }
+    
+    .modal-list .get-to-basket{
+        margin-top: 5px;
+    }
+}
+
+@media screen and  (max-width: 740px){
+    .fillet-list-title p:nth-child(2){
+        display: none;
+    }
+    
+    .item-price{
+        display: none;
+    }
+    
+    .main-nav-tabs{
+        flex-direction: row!important;
+    }
+    
+    .main-nav-tabs i{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:490px){
+    .item-number{
+        display: none;
+    }
+    
+    .item-name{
+        left: 14%!important
     }
 }
 
@@ -763,6 +896,18 @@ footer{
     }
 }
 
+@media screen and (max-width:670px){
+    .main-nav-tabs{
+        position: absolute;
+        top: -40px;
+        margin-bottom: 0;
+    }
+    
+    .tabs-container{
+        position: relative;
+    }
+}
+
 @media screen and (max-width:600px){
     .nav-tabs{
         flex-direction: column;
@@ -772,6 +917,37 @@ footer{
     .nav-tabs li{
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    
+    .item-get-to-basket{
+        display: none;
+    }
+    
+    .item-number{
+        left: 15%
+    }
+    
+    .item-name{
+        left: 23%
+    }
+    
+    .modal-list .full-price{
+        font-size: 13px
+    }
+}
+
+@media screen and (max-width:500px){
+    .modal-list .goods-item .tare{
+        font-size: 20px!important;
+        margin-top: 5px;
+    }
+    
+    .modal-list .goods-item .get-to-basket{
+        font-size: 18px;
+    }
+    
+    .modal-body .goods-item{
+        padding: 0;
     }
 }
 
@@ -794,6 +970,30 @@ footer{
     .btn-2{
         margin-left: 0;
         margin-top: 10px;
+    }
+    
+    .modal-list .type-of-fish{
+        font-size: 17px!important
+    }
+    
+    .modal-list .price{
+        font-size: 15px!important
+    }
+}
+
+@media screen and  (max-width:440px){
+    .modal-body .price{
+        font-size: 20px!important
+    }
+}
+
+@media screen and  (max-width:430px){
+    .item-name{
+        font-size: 12px!important;
+    }
+    
+    .tabs-container{
+        padding-right: 0;
     }
 }
 
@@ -832,11 +1032,44 @@ footer{
     footer .phone-footer{
         text-align: center
     }
+    
+}
+
+@media screen and  (max-width:380px){
+    .modal-body .price{
+        font-size: 16px!important;
+        padding-top: 10px;`
+    }
+    
+    .modal-body .price .full-price{
+        padding-top: 5px;
+        font-size: 12px
+    }
+}
+
+@media screen and  (max-width:350px){
+    .modal-body .price{
+        font-size: 15px!important;
+        padding-top: 10px;`
+    }
+    
+    .modal-body .price .full-price{
+        padding-top: 6px;
+        font-size: 10px
+    }
 }
 
 @media screen and  (max-width:370px){
     .modal-content{
         width: 250px!important;
+    }
+    
+    .nav-stacked li a{
+        padding: 5px;
+    }
+    
+    .item-name{
+        font-size: 10px;
     }
 }
 
