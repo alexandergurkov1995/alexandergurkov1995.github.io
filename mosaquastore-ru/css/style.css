@@ -1,0 +1,237 @@
+/*Fonts*/
+@font-face {
+    font-family: Aquino-Demo;
+    src: url(../fonts/Aquino-Demo.ttf); 
+}
+
+@font-face {
+    font-family: Museo_Sans_Cyrl_100;
+    src: url(../fonts/Museo_Sans_Cyrl_100.ttf); 
+}
+
+@font-face {
+    font-family: Museo_Sans_Cyrl_300;
+    src: url(../fonts/Museo_Sans_Cyrl_300.ttf); 
+}
+
+@font-face {
+    font-family: Museo_Sans_Cyrl_500;
+    src: url(../fonts/Museo_Sans_Cyrl_500.ttf); 
+}
+
+@font-face {
+    font-family: Museo_Sans_Cyrl_700;
+    src: url(../fonts/Museo_Sans_Cyrl_700.ttf); 
+}
+
+@font-face {
+    font-family: Museo_Sans_Cyrl_900;
+    src: url(../fonts/Museo_Sans_Cyrl_900.ttf); 
+}
+/*Fonts*/
+
+/*Reset.css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: normal;
+    line-height: 1;
+}
+
+input, button, textarea{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+/*Reset.css*/
+header, section{
+    width: 100%;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 18px;
+}
+
+.login-form button{
+    text-transform: uppercase;
+    font-size: 10.6px;
+    color: #cacaca;
+    font-family: Museo_Sans_Cyrl_300;
+    cursor: pointer;
+}
+
+.login-form button:nth-child(1){
+    padding-right: 8px;
+    border-right: 1px solid #cacaca;
+    margin-right: 8px;
+}
+
+.number-big p{
+    text-align: center;
+    font-family: Museo_Sans_Cyrl_900;
+    color: #57cff6;
+    font-size: 20px;
+}
+
+.number-big p span{
+    font-family: Museo_Sans_Cyrl_300;
+    color: #cacaca;
+    display: block;
+    padding-top: 9px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.search{
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(214,219,222,1);
+-moz-box-shadow: 0px 0px 5px 2px rgba(214,219,222,1);
+box-shadow: 0px 0px 5px 2px rgba(214,219,222,1);
+    padding: 12px 29px 12px 20px
+}
+
+.search input{
+    font-size: 12.3px;
+    font-family: Museo_Sans_Cyrl_100;
+    color: #cacaca;
+}
+
+.search button{
+    color: #57cff6;
+    font-size: 16px;
+    border-left: 1px solid  #f4f4f4;
+    padding-left: 5px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+.middle-header{
+    padding-top: 80px;
+    padding-bottom: 180px;
+    position: relative;
+    background: url(../img/bg-header-mid.gif) no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+    margin-left: -5px;
+    z-index: -1;
+}
+
+.logo{
+    text-align: center;
+}
+
+.bottom-header{
+    background: url(../img/bg-header-bottom.png) no-repeat 0 0;
+    background-size: cover;
+    padding: 100px 0 30px;
+    margin-top: -40px;
+    z-index: 1;
+}
+
+.bottom-header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-us, .info-about-goods , .basket{
+    display: flex
+}
+
+.contact-us{
+    flex-wrap: wrap;
+    width: 360px;
+}
+
+.contact-us-item:nth-child(1), .contact-us-item:nth-child(2){
+    margin-bottom: 10px;
+}
+
+.contact-us-item p{
+    font-size: 13.8px;
+    font-family: Museo_Sans_Cyrl_100;
+    color: #808a92;
+}
+
+.contact-us-item p span{
+    margin-right: 10px;
+    font-size: 18px;
+    color: #87dbf8;
+}
+
+.contact-us-item:nth-child(2), .contact-us-item:nth-child(4){
+    margin-left: 23px;
+}
+
+.info-about-goods{
+    justify-content: space-between;
+    width: 550px;
+}
+
+.info-about-goods-item{
+    display: flex;
+    align-items: baseline;
+}
+
+.gradient-icon{
+    margin-right: 15px;
+    margin-bottom: -5px;
+}
+
+.info-about-goods-item p{
+    text-transform: uppercase;
+    font-size: 12.4px;
+    font-family: Museo_Sans_Cyrl_500;
+    color: #0da5de;
+}
+
+.quantity span{
+    margin-left: 6px;
+    color: #c8c8c8;
+}
+
+.basket{
+    width: 177px;
+    align-items:center;
+}
+
+.basket-icon{
+    margin-right: 17px;
+}
+
+.basket h4{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: Museo_Sans_Cyrl_700;
+    color: #0da5de;
+}
+
+.basket span{
+    color: #c8c8c8;
+    font-size: 12px;
+    font-family: Museo_Sans_Cyrl_100;
+}
