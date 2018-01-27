@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="fontawesome/fontawesome-all.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('.aside-hamburger').on('click', function() {
+                $('.aside-catalog-body').slideToggle();
+            })
+        })
+    </script>
 </head>
 
 <body>
@@ -83,8 +90,107 @@
                 </a>
             </div>
         </div>
+
+        <nav>
+            <div class="container">
+                <ul class="navbar">
+                    <li class="navbar-item">
+                        <a href="">главная</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="">каталог</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="">новости</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="">доставка</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="">гарантия</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="">сертификаты</a>
+                    </li>
+                    <li class="navbar-item last-navbar-item">
+                        <a href="">контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
+    <section class="content">
+        <div class="container">
+            <aside class="sidebar">
+                <div class="aside-item aside-catalog">
+                    <div class="aside-item-title">
+                        <button class="aside-hamburger">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <h4>каталог товаров</h4>
+                    </div>
+                    <div class="aside-catalog-body">
+                        <a href="" class="link-aside-catalog-item">
+                            <div class="aside-catalog-body-item first-catalog-body-item">
+                                <p>фильтры atoll</p>
+                                <i class="far fa-check-circle catalog-icon"></i>
+                            </div>
+                        </a>
+                        <a href="" class="link-aside-catalog-item">
+                            <div class="aside-catalog-body-item">
+                                <p>фильтры гейзер</p>
+                                <i class="far fa-check-circle catalog-icon"></i>
+                            </div>
+                        </a>
+                        <a href="" class="link-aside-catalog-item">
+                            <div class="aside-catalog-body-item">
+                                <p>фильтры honeywell</p>
+                                <i class="far fa-check-circle catalog-icon"></i>
+                            </div>
+                        </a>
+                        <a href="" class="link-aside-catalog-item">
+                            <div class="aside-catalog-body-item">
+                                <p>компрессоры для септика</p>
+                                <i class="far fa-check-circle catalog-icon"></i>
+                            </div>
+                        </a>
+                        <a href="" class="link-aside-catalog-item">
+                            <div class="aside-catalog-body-item last-catalog-body-item">
+                                <p>наши услуги</p>
+                                <i class="far fa-check-circle catalog-icon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="aside-item aside-news">
+                    <div class="aside-item-title aside-item-title-news">
+                        <h4>новости</h4>
+                    </div>
+                    <div class="aside-news-catalog">
+                        <div class="aside-news-item aside-news-item-first">
+                            <h4 class="aside-news-item-title">название новости</h4>
+                            <p class="news-prevoew">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, commodi incidunt quaerat sed vero, nemo itaque. </p>
+                            <p class="date">22.09.2108</p>
+                        </div>
+                        <div class="aside-news-item">
+                            <h4 class="aside-news-item-title">название новости</h4>
+                            <p class="news-prevoew">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, commodi incidunt quaerat sed vero, nemo itaque. </p>
+                            <p class="date">22.09.2108</p>
+                        </div>
+                        <div class="aside-news-item aside-news-item-last">
+                            <h4 class="aside-news-item-title">название новости</h4>
+                            <p class="news-prevoew">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, commodi incidunt quaerat sed vero, nemo itaque. </p>
+                            <p class="date">22.09.2108</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-item">
+
+                </div>
+            </aside>
+        </div>
+    </section>
 
 </body>
 
