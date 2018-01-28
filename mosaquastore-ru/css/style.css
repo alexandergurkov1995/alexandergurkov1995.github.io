@@ -661,6 +661,10 @@ nav {
     align-items: center;
 }
 
+footer.mobile {
+    display: none;
+}
+
 footer {
     padding: 24px 0 17px;
     background: #1e5799;
@@ -786,6 +790,14 @@ footer .contact-us-item span {
     background: #ab262b;
 }
 
+.copyright {
+    text-align: center;
+    font-size: 10px;
+    padding: 15px 0 0;
+    font-family: Museo_Sans_Cyrl_300;
+    color: #fff;
+}
+
 @media screen and (min-width: 992px) and (max-width:1200px) {
     .container {
         width: 100%;
@@ -839,72 +851,379 @@ footer .contact-us-item span {
     .container {
         margin: 0;
         padding: 0 15px;
+        width: 100vw;
+        overflow: hidden;
     }
-    
-    .top-header{
-        display: block;
-        border: none;
+
+    section,
+    header,
+    footer {
+        width: 100vw;
     }
-    
-    .number-big p{
+
+    .number-big {
         float: left;
         clear: both;
-        margin-top: -10px;
+        margin-top: -20px;
     }
-    
-    .login-form{
-        margin-bottom: 10px;
+
+    .top-header {
+        display: table;
+        width: 100%;
+        border: none;
     }
-    
-    .login-form, .search{
+
+    .search,
+    .login-form {
         float: right;
     }
-    
-    .navbar{
-        display: flex
+
+    .login-form {
+        margin-bottom: 10px;
     }
-    
-    .navbar{
-        display: flex!important;
-        align-items: stretch;
+
+    .bottom-header {
+        background-position: center;
+    }
+
+    .bottom-header .container {
+        display: block;
+    }
+
+    .bottom-header .contact-us {
+        margin: 30px 0 15px;
+        width: 100%;
+        padding-bottom: 15px;
+        padding-left: 13%;
+    }
+
+    .bottom-header .contact-us-item {
+        width: 40%;
+        margin-left: 0;
+    }
+
+    .info-about-goods {
+        width: 70%;
+        display: block;
+        position: relative;
+        height: 60px;
+    }
+
+    .info-about-goods-item {
+        margin-bottom: 15px;
+        position: absolute;
+        width: 50%;
+        margin: 0;
+    }
+
+    .info-about-goods-item-first {
+        left: 0;
+        top: 25%
+    }
+
+    .info-about-goods-item-third {
+        bottom: 0
+    }
+
+    .info-about-goods-item {
+        right: 0;
+    }
+
+    .basket {
+        width: 30%;
+        float: right;
+        margin: 0;
+        margin-top: -50px;
+    }
+
+
+    .navbar-item {
+        width: 20%;
+        border: none!important;
+        text-align: center;
+        padding-right: 0!important
+    }
+
+
+    .navbar-item:nth-child(2),
+    .navbar-item:nth-child(6) {
+        display: none
+    }
+
+    .content {
+        width: 100vw;
+    }
+
+    .aside-catalog-body {
+        display: none;
+    }
+
+    .slick-slide img {
+        width: 70%!important;
+    }
+
+    .slider-content {
+        top: 50px;
+    }
+
+    .slider-content p {
+        margin-top: 20px;
+    }
+
+    .bestsellers {
+        flex-wrap: wrap;
         justify-content: space-around
     }
-    
-    .navbar-item a{
-        width: 20%;
+
+    .bestsellers-item {
+        margin-bottom: 25px;
     }
-    
-    .navbar-item:nth-child(2), .navbar-item:nth-child(6){
-        display: none;
-    }
-    
-    .sidebar {
-        display: none;
-    }
-    
-    .content, main-slider-item {
-        width: 100%!important;
-    }
-    
-    .slick-slide img{
-        width: 50%;
-    }
-    
-    .main-content{
+
+    .main-content {
         float: none!important;
         margin: auto;
         width: 100%;
         padding-left: 0;
     }
-    
-    .bestsellers{
-        flex-wrap: wrap;
+
+    .sidebar {
+        display: none;
     }
-    
-    .bestsellers-item{
-        width: 40%;
-        margin: 40px
+
+    footer {
+        display: none;
     }
-    
+
+    footer.mobile {
+        display: block
+    }
+
+    footer.mobile .container {
+        padding: 0;
+    }
+
+    footer.mobile .container {
+        display: flex;
+        flex-direction: column
+    }
+
+    .top-footer-mobile {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 17px;
+        margin-bottom: 17px;
+        border-bottom: 1px solid #449dcb
+    }
+
+    .middle-footer-mobile .container {
+        display: flex;
+        flex-direction: row!important;
+        justify-content: space-around;
+        padding: 17px 20px 10px;
+    }
+
+    .footer-social {
+        width: 35%;
+        text-align: center
+    }
+
+    .footer-number {
+        display: block;
+        margin: 0;
+    }
+
+    .footer-contact-and pay {
+        width: 50%;
+    }
+
+    .bottom-footer-mobile .container {
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
+
+@media screen and (max-width: 700px) {
+
+    .slider-content h3 {
+        font-size: 18px;
+    }
+
+    .slider-content p {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .login-form button {
+        font-size: 8px;
+    }
+
+    .number-big p {
+        font-size: 16px;
+    }
+
+    .number-big p span {
+        font-size: 8px;
+    }
+
+    .search {
+        padding-right: 10px;
+        max-width: 200px;
+        padding: 5px 10px
+    }
+
+    .search input {
+        width: 75%;
+        font-size: 10px;
+    }
+
+    .search button {
+        margin-left: 0;
+        width: 20%;
+        float: right;
+        font-size: 14px;
+    }
+
+    .middle-header {
+        padding-top: 31px;
+        padding-bottom: 70px;
+        background-position: 85%;
+    }
+
+    .logo {
+        width: 300px;
+        margin: 0 auto 90px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    header .contact-us-item p {
+        font-size: 10px;
+    }
+
+    .gradient-icon {
+        margin-right: 5px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .info-about-goods-item-first {
+        top: 25%
+    }
+
+    .info-about-goods-item-third {
+        bottom: 25%
+    }
+
+    .info-about-goods-item p {
+        font-size: 10px;
+    }
+
+    .basket {
+        margin-top: -60px;
+    }
+
+    .basket-icon {
+        width: 40px;
+        height: 32px;
+    }
+
+    .basket h4 {
+        font-size: 10px;
+    }
+
+    .basket p span {
+        font-size: 9px
+    }
+
+    header .contact-us-item p span {
+        font-size: 12px
+    }
+
+    .navbar-item a {
+        font-size: 13px;
+    }
+
+    .aside-item-title {
+        padding: 15px 0;
+        justify-content: center
+    }
+
+    .aside-hamburger {
+        font-size: 14px;
+    }
+
+    .aside-item-title h4 {
+        font-size: 14px;
+    }
+
+    .aside-catalog-body {
+        padding: 18px 0;
+    }
+
+    .aside-catalog-body-item {
+        padding: 12px 20%;
+        font-size: 10px
+    }
+
+    .first-catalog-body-item {
+        padding-top: 0;
+    }
+
+    .last-catalog-body-item {
+        padding-bottom: 0;
+    }
+
+    .bestsellers-title {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .bestsellers-title a {
+        font-size: 10px;
+    }
+
+    .slider-content {
+        right: 20px;
+        top: 25px
+    }
+
+    .slick-prev {
+        left: 0px!important
+    }
+
+    .slick-next {
+        right: 0!important
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .slider-content h3 {
+        font-size: 15px;
+        line-height: 1.5
+    }
+
+    .slider-content p {
+        margin-top: 10px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slider-content h3 {
+        font-size: 13px;
+        line-height: 1.5
+    }
+
+    .slider-content p {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+
 /*star*/
