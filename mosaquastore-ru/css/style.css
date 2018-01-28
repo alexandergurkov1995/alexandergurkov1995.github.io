@@ -296,7 +296,7 @@ nav {
     padding-top: 40px;
     position: relative;
     overflow-y: hidden;
-    padding-bottom: 170px;
+    padding-bottom: 190px;
 }
 
 .bottom-img {
@@ -312,7 +312,7 @@ nav {
 
 }
 
-.aside-catalog-mobile{
+.aside-catalog-mobile {
     display: none;
 }
 
@@ -802,6 +802,26 @@ footer .contact-us-item span {
     color: #fff;
 }
 
+@media screen and (min-width:1600px) {
+    .bottom-header {
+        padding: 50px 0 20px;
+    }
+
+    .content {
+        padding-bottom: 250px!important;
+    }
+
+    .new-arrivals-info h5,
+    .bestsellers-item h5 {
+        font-size: 15px
+    }
+
+    .about-us-info p,
+    .about-us-info-title {
+        font-size: 16px;
+    }
+}
+
 @media screen and (min-width: 992px) and (max-width:1200px) {
     .container {
         width: 100%;
@@ -940,6 +960,9 @@ footer .contact-us-item span {
         margin-top: -50px;
     }
 
+    nav .container {
+        padding-left: 0;
+    }
 
     .navbar-item {
         width: 20%;
@@ -960,6 +983,10 @@ footer .contact-us-item span {
 
     .aside-catalog-body {
         display: none;
+    }
+
+    .aside-catalog-mobile {
+        display: block;
     }
 
     .slick-slide img {
@@ -994,6 +1021,10 @@ footer .contact-us-item span {
         display: none;
     }
 
+    .partners {
+        width: 100%;
+    }
+
     footer {
         display: none;
     }
@@ -1019,11 +1050,19 @@ footer .contact-us-item span {
         border-bottom: 1px solid #449dcb
     }
 
+    .footer-nav-first {
+        margin: 0;
+    }
+
+    .footer-nav-secnd {
+        margin: 0;
+    }
+
     .middle-footer-mobile .container {
         display: flex;
         flex-direction: row!important;
         justify-content: space-around;
-        padding: 17px 20px 10px;
+        padding: 17px 35px 10px!important;
     }
 
     .footer-social {
@@ -1034,6 +1073,10 @@ footer .contact-us-item span {
     .footer-number {
         display: block;
         margin: 0;
+    }
+
+    .footer-pay {
+        margin-left: 0;
     }
 
     .footer-contact-and pay {
@@ -1048,7 +1091,6 @@ footer .contact-us-item span {
 }
 
 @media screen and (max-width: 700px) {
-
     .slider-content h3 {
         font-size: 18px;
     }
@@ -1056,6 +1098,22 @@ footer .contact-us-item span {
     .slider-content p {
         margin-top: 10px;
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .middle-footer-mobile .container {
+        flex-direction: column!important;
+        align-items: center;
+    }
+
+    .footer-social {
+        width: 100%;
+    }
+
+    .bottom-footer-mobile .container {
+        flex-direction: row!important;
+        justify-content: space-between;
     }
 }
 
@@ -1203,10 +1261,24 @@ footer .contact-us-item span {
     .slick-next {
         right: 0!important
     }
+
+    .partners {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .partners-item {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .top-footer-mobile {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 450px) {
-
     .slider-content h3 {
         font-size: 15px;
         line-height: 1.5
@@ -1218,7 +1290,41 @@ footer .contact-us-item span {
     }
 }
 
+@media screen and (max-width: 448px) {
+    .footer-map {
+        margin-top: 20px;
+    }
+
+    .navbar-item {
+        margin-right: 5px;
+    }
+}
+
 @media screen and (max-width: 400px) {
+    nav {
+        padding: 12px;
+    }
+
+    header .contact-us {
+        justify-content: center;
+        align-items: center;
+        padding-left: 0!important;
+    }
+
+    header .contact-us-item {
+        width: 100%!important;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    header .contact-us-item:nth-child(2) {
+        margin-left: 18px;
+    }
+
+    .navbar-item a {
+        font-size: 10px;
+    }
+
     .slider-content h3 {
         font-size: 13px;
         line-height: 1.5
@@ -1227,6 +1333,43 @@ footer .contact-us-item span {
     .slider-content p {
         margin-top: 10px;
         font-size: 15px;
+    }
+
+    footer .contact-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .contact-us-item {
+        margin: 0 0 10px 0!important;
+    }
+
+    footer .contact-us-item:nth-child(2) {
+        margin-left: 21px!important;
+    }
+
+    .bottom-footer-mobile .container {
+        flex-direction: column!important;
+    }
+
+    .footer-social-icons {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .info-about-goods-item p {
+        font-size: 9px;
+    }
+
+    .bottom-header .container {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .search {
+        max-width: 130px;
     }
 }
 
