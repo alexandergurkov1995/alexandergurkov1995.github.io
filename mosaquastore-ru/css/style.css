@@ -312,6 +312,10 @@ nav {
 
 }
 
+.aside-catalog-mobile{
+    display: none;
+}
+
 .aside-item {
     width: 100%;
     border-radius: 10px;
